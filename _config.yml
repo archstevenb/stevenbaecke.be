@@ -1,0 +1,136 @@
+# Site settings
+title: jekyll prototype
+email: info@sitename.be
+description: Site description
+baseurl: ""
+url: "https://jekyllprototype.com/"
+github_username: bert-bruggeman
+repository: "bert-bruggeman/base-jekyll-prototype"
+remote_theme: bert-bruggeman/base-jekyll-theme
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-remote-theme
+  - jekyll-assets
+  - jekyll-email-protect
+  - jekyll-include-cache
+
+# Includes
+include:
+  - _pages
+  - _collections
+  - _assets/fonts
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+  - .git
+
+# Do not process folders
+keep_files:
+  - favicons
+  - media
+
+# Collections
+collections_dir: _collections
+collections:
+  forms:
+    output: false
+
+# Defaults
+defaults:
+  - scope:
+      type: pages
+    values:
+      og-type: article
+  - scope:
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:year-:month-:day-:title:output_ext
+      incremental: true
+      og-type: blog
+
+# Image styles
+image_styles:
+  quality: 75
+  banner:
+    width: 1400
+    height: 700
+    sizes:
+    - media: 'min-width: 1280px'
+      width: 1280
+      height: 640
+    - media: 'min-width: 720px'
+      width: 960
+      height: 480
+    - media: 'max-width: 720px'
+      width: 640
+      height: 480
+    - media: 'max-width: 480px'
+      width: 400
+      height: 300
+  card:
+    width: 380
+    height: 285
+    sizes:
+    - media: 'max-width: 520px'
+      width: 480
+      height: 360
+    - media: 'max-width: 720px'
+      width: 640
+      height: 480
+  sidebar:
+    width: 420
+    height: 320
+    sizes:
+    - media: 'max-width: 960px'
+      width: 960
+      height: 400
+
+# liquid compress html
+compress_html:
+  clippings: all
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+# jekyll-assets
+assets:
+  source_maps: false
+  destination: "/assets"
+  compression: true
+  digest: false
+  gzip: false
+  defaults:
+    js: { integrity: false }
+    css: { integrity: false }
+    img: { integrity: false }
+  caching:
+    path: ".jekyll-cache/assets"
+    type: file
+    enabled: true
+  precompile: []
+  raw_precompile: []
+  cdn:
+    baseurl: false
+    destination: false
+    url: null
+  sources:
+    - _assets
+    - media
+  plugins:
+    css: { autoprefixer: {}}
+    img: { optim: {}}
+  debug: true

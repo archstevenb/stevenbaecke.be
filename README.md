@@ -1,2 +1,2 @@
-# website
-Public website
+# base-jekyll-prototype
+A prototype jekyll website

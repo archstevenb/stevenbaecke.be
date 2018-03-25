@@ -1,0 +1,91 @@
+// PAGE COMPONENTS
+$page-wrappers: "#nav, #header, #banner, #main, #footer";
+
+
+// page (critical)
+@mixin page {
+
+    #{$page-wrappers} {
+        padding-left: $spacing-large;
+        padding-right: $spacing-large;
+    }
+
+    #header {
+        padding-top: unit(64);
+
+        & > a {
+            display: block;
+            font-size: $font-size-huge;
+            font-weight: 300;
+            margin: $spacing-small 0;
+        }
+    }
+
+    #banner {
+        margin-bottom: $spacing-large;
+        @include picture-ratio(2,1);
+    }
+
+    #main,
+    #footer {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #nav {
+        background-color: $color-navy;
+        position: fixed;
+        height: unit(64);
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 9;
+    }
+
+}
+
+// page small
+@mixin page-small {
+
+    #nav {
+        padding: 0;
+
+        & > a {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    #banner {
+        @include picture-ratio(4,3);
+    }
+}
+
+
+// page large
+@mixin page-large {
+    #{$page-wrappers} {
+        @include wrap($spacing-large, $breakpoint-large);
+    }
+}
+
+
+
+// page loaded (non-critical)
+@mixin page-loaded {
+    #main,
+    #footer {
+        visibility: visible;
+        animation: 0.15s ease-out 0.25s 1 fadeIn forwards;
+    }
+
+    #main img.lazyloaded {
+        animation-delay: .25s;
+    }
+
+}
+
+

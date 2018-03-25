@@ -1,0 +1,14 @@
+title: Menu
+links:
+  - description: description
+    link: /
+    title: Frontpage
+  - description: description
+    link: /article
+    title: Article example
+  - description: description
+    link: /form
+    title: Form example
+  - description: description
+    link: /blog
+    title: Blog

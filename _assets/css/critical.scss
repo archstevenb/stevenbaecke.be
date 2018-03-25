@@ -1,0 +1,86 @@
+// --------
+// IMPORTS
+// --------
+
+@import
+    "fonts",
+    "library/library",
+    "library/icons/hamburger",
+    "variables",
+    "components/page";
+
+
+// ------------
+// ALL SCREENS
+// ------------
+
+// include fonts
+@include fonts-critical;
+
+// include base component
+@include base;
+
+// include menu component
+@include menu (
+    $selector: "#nav"
+);
+
+// include menu link component
+@include link (
+    $color: $color-white,
+    $padding: $spacing-small,
+    $selector: "#nav ul a"
+);
+
+// include page component
+@include picture;
+
+// include page component
+@include page;
+
+
+
+// ------------------
+// MIN SMALL SCREENS
+// ------------------
+
+@media screen and (min-width: $breakpoint-small) {
+
+    // include menu horizontal component
+    @include menu-extended (
+        $orientation: "horizontal",
+        $selector: "#nav"
+    );
+}
+
+
+
+// ------------------
+// MIN LARGE SCREENS
+// ------------------
+
+@media screen and (min-width: $breakpoint-large) {
+
+    // include page large component
+    @include page-large;
+}
+
+
+
+// ------------------
+// MAX SMALL SCREENS
+// ------------------
+
+@media screen and (max-width: $breakpoint-small) {
+
+    // page small
+    @include page-small;
+
+    // include hamburger-icon
+    @include hamburger-icon (
+        $selector: "#nav > a > span",
+        $color: white
+    );
+}
+
+
