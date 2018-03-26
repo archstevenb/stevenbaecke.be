@@ -2,13 +2,13 @@ title: Menu
 links:
   - description: description
     link: /
-    title: Frontpage
+    title: Home
   - description: description
-    link: /article
-    title: Article example
+    link: /informatie
+    title: Informatie
   - description: description
     link: /form
-    title: Form example
+    title: Contact
   - description: description
     link: /blog
-    title: Blog
+    title: Projecten

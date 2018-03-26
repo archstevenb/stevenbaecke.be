@@ -27,8 +27,7 @@
 
 // include menu link component
 @include link (
-    $color: $color-white,
-    $padding: $spacing-small,
+    $margin: 0 $spacing-huge 0 0,
     $selector: "#nav ul a"
 );
 
@@ -79,7 +78,7 @@
     // include hamburger-icon
     @include hamburger-icon (
         $selector: "#nav > a > span",
-        $color: white
+        $color: $color-black,
     );
 }
 

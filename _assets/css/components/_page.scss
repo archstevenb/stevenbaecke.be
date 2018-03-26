@@ -1,24 +1,62 @@
 // PAGE COMPONENTS
-$page-wrappers: "#nav, #header, #banner, #main, #footer";
-
 
 // page (critical)
 @mixin page {
 
-    #{$page-wrappers} {
-        padding-left: $spacing-large;
-        padding-right: $spacing-large;
+    #header {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 900;
+        letter-spacing: .15em;
+        height: em(560);
+        text-transform: uppercase;
+        padding: $spacing-huge * 1.25 $spacing-huge * 1.5 $spacing-huge * 2.5;
+
+        .vcard {
+            flex: 1;
+            flex-basis: 40%;
+            font-size: $font-size-small;
+            text-align: right;
+        }
     }
 
-    #header {
-        padding-top: unit(64);
+    .vcard {
 
-        & > a {
-            display: block;
-            font-size: $font-size-huge;
-            font-weight: 300;
-            margin: $spacing-small 0;
+        address {
+            font-style: normal;
         }
+
+        & > span {
+            display: block;
+        }
+
+    }
+
+    #logo {
+        display: block;
+        flex: 1;
+        flex-basis: 100%;
+        font-size: $font-size-huge;
+        font-weight: 300;
+        letter-spacing: .2em;
+        line-height: 120%;
+        height: 2.5em;
+        order: 3;
+        margin⁻bottom: $spacing-huge;
+        text-align: center;
+
+        strong {
+            display: block;
+            font-weight: 900;
+            font-size: em($font-size-medium, $font-size-huge);
+            letter-spacing: .75em;
+        }
+    }
+
+    #nav {
+        flex: 1;
+        flex-basis: 60%;
+        font-size: $font-size-small;
     }
 
     #banner {
@@ -32,16 +70,58 @@ $page-wrappers: "#nav, #header, #banner, #main, #footer";
         opacity: 0;
     }
 
-    #nav {
-        background-color: $color-navy;
-        position: fixed;
-        height: unit(64);
-        left: 0;
-        right: 0;
-        top: 0;
-        z-index: 9;
+    .box {
+        @include picture-ratio();
+
+        figcaption {
+            display: none;
+        }
     }
 
+    .dark {
+        background-color: $color-black;
+        color: $color-white;
+
+        * {
+            color: inherit;
+        }
+    }
+
+    .frames {
+        & > div {
+            padding: 3em;
+        }
+        .box {
+            flex: 1 33.33%;
+        }
+    }
+
+    .page {
+        padding: $spacing-huge $spacing-huge * 2;
+
+        .box {
+            margin: $spacing-huge;
+        }
+
+        & > div {
+            order: 3;
+            flex: 1 30%;
+        }
+
+        & > figure {
+            flex: 1;
+        }
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+
+        h1, h2, h3 {
+            text-transform: uppercase;
+        }
+
+    }
 }
 
 // page small
@@ -51,8 +131,9 @@ $page-wrappers: "#nav, #header, #banner, #main, #footer";
         padding: 0;
 
         & > a {
-            width: 64px;
-            height: 64px;
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
             display: flex;
             align-items: center;
         }
@@ -67,8 +148,9 @@ $page-wrappers: "#nav, #header, #banner, #main, #footer";
 
 // page large
 @mixin page-large {
-    #{$page-wrappers} {
-        @include wrap($spacing-large, $breakpoint-large);
+    body {
+        margin: 0 auto;
+        max-width: $breakpoint-huge;
     }
 }
 
@@ -88,4 +170,27 @@ $page-wrappers: "#nav, #header, #banner, #main, #footer";
 
 }
 
+@mixin focus-effect-line (
+    $selector: "#nav ul  a",
+    $spacing: .4em
+) {
+    #{$selector} {
+        &:after {
+            content: "";
+            display: block;
+            height: em(3, $font-size-small);
+            margin-top: $spacing;
+            @include focus-effect-background-image($color-text);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 0%;
+            transition: background-size .4s ease-in-out;
+        }
 
+        &.active:after,
+        &:focus:after,
+        &:active:after {
+            background-size: 240%;
+        }
+    }
+}

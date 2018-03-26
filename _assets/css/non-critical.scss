@@ -2,8 +2,9 @@
 // IMPORTS
 // --------
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300i,400i,600,600i,700,700i');
+
 @import
+    "fonts",
     "library/library",
     "library/icons/hamburger",
     "library/components/cards",
@@ -15,6 +16,9 @@
 // ------------
 // ALL SCREENS
 // ------------
+
+// include fonts
+@include fonts-non-critical;
 
 // include keyframes component
 @include keyframes;
@@ -42,15 +46,6 @@
     $selector: "p a"
 );
 
-// include focus effect component
-@include focus-effect (
-    $selector: "#nav a, #{$button-selector}"
-);
-@include focus-effect-background (
-    $color: rgba(256,256,256,0.05),
-    $selector: "#nav a:focus"
-);
-
 // include blockquote component
 @include blockquote;
 
@@ -60,16 +55,10 @@
 // include page loaded component
 @include page-loaded;
 
-// include menu link effects component
-@include link-extended (
-    $background-active: lighten($color-navy, 5),
-    $background-hover: lighten($color-navy, 2),
-    $selector: "#nav > ul a"
-);
+@include focus-effect-line;
 
 // include card component
 @include card (
-    $border: 1px solid $color-border,
     $margin-bottom: $spacing-medium,
 );
 
@@ -84,13 +73,6 @@
     // include button inline component
     @include button-inline;
 
-    // include grid helper
-    @include grid (
-        $selector: '.cards',
-        $columns: 2,
-        $gap: $spacing-medium
-    );
-
 }
 
 
@@ -101,12 +83,6 @@
 
 @media screen and (min-width: $breakpoint-medium) {
 
-    // include grid item helper
-    @include grid-columns (
-        $selector: '.cards',
-        $columns: 3,
-        $gap: $spacing-large
-    );
 }
 
 
@@ -120,7 +96,6 @@
     // include menu dropdown component
     @include menu-dropdown (
         $selector: "#nav > ul",
-        $background: inherit
     );
 
     // include hamburger icon close component

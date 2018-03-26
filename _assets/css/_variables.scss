@@ -1,0 +1,59 @@
+
+// colors
+$color-text: $color-black;
+$color-link: $color-blue;
+$color-focus: darken($color-blue,10);
+$color-border: $color-silver;
+$color-primary: $color-blue;
+$color-secondary: $color-navy;
+$color-heading: $color-black;
+
+// base
+$base-background: $color-silver;
+$base-body-background: $color-white;
+$base-font-size: 16;
+$base-font-family: 'Lato', sans-serif;
+$base-padding: null;
+$base-unit: em;
+
+// font size
+$font-size-tiny: unit(8);
+$font-size-small: unit(11);
+$font-size-medium: unit(14);
+$font-size-large: unit(18);
+$font-size-huge: unit(30);
+
+// font-weight
+$font-weight-thin: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 700;
+
+// line-height
+$line-height-tiny: 1;
+$line-height-small: 1.5;
+$line-height-medium: 1.75;
+$line-height-large: 2.5;
+$line-height-huge: 3;
+
+// headings
+$heading-font-family: null;
+$heading-font-size: unit(24);
+$heading-font-weight: 500;
+$heading-letter-spacing: null;
+$heading-line-height: $line-height-small;
+$heading-text-transform: uppercase;
+
+// spacing
+$spacing-tiny: unit(8);
+$spacing-small: unit(16);
+$spacing-medium: unit(24);
+$spacing-large: unit(32);
+$spacing-huge: unit(40);
+
+// breakpoints
+$breakpoint-tiny: unit(480);
+$breakpoint-small: unit(720);
+$breakpoint-medium: unit(1024);
+$breakpoint-large: unit(1280);
+$breakpoint-huge: unit(1600);
+
