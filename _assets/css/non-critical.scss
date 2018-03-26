@@ -94,11 +94,13 @@
 @media screen and (max-width: $breakpoint-small) {
 
     // include menu dropdown component
-    @include menu-dropdown (
+    @include menu-slide-left (
         $selector: "#nav > ul",
     );
 
     // include hamburger icon close component
-    @include hamburger-icon-close;
+    @include hamburger-icon-close (
+        $selector: "#nav > a.active > span",
+    );
 
 }

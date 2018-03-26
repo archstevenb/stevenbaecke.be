@@ -1,7 +1,14 @@
 ---
 title: Architect Steven Baecke staat in voor kleine en grote projecten.
 permalink: /
-layout: home
+layout: frontpage
+meta:
+  title: Een titel met zoveel mogelijk kernwoorden
+  description: Een kort en bondige omschrijving met zoveel mogelijk kernwoorden zoals architect, nieuwbouw, verbouwingen, renovaties...
+  menu:
+    title: Home
+    url: /#home
+    order: 1
 images:
   - url: "plan.jpg"
     alt: Plan
@@ -9,6 +16,7 @@ images:
     alt: Lijntekening
 pages:
   - /informatie
+  - /contact
 ---
 
 In 2015 werd architect Steven Baecke opgericht, Steven heeft een masterdiploma Architectuur behaald aan

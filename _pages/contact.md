@@ -1,8 +1,13 @@
 ---
-title: Example form
+title: Contact
 permalink: /contact
 layout: page
-image: cold.jpg
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ute et dolore magna aliqua
+meta:
+  title: Een titel met zoveel mogelijk kernwoorden
+  description: Een kort en bondige omschrijving met zoveel mogelijk kernwoorden zoals architect, nieuwbouw, verbouwingen, renovaties...
+  menu:
+    title: Contact
+    url: /#contact
+    order: 4
 ---
-{% include components/form.html form="example" %}
+{% include components/form.html form="contact" %}

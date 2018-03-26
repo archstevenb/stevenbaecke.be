@@ -2,7 +2,8 @@
 title: Bericht verzonden
 layout: page
 permalink: /bericht-verzonden
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ute et dolore magna aliqua
+meta:
+  description: Uw bericht naar architect Steven Baecke werd succesvol verzonden
 ---
 
 Uw bericht werd succesvol verzonden, ik tracht u zo snel mogelijk te contacteren...

@@ -4,45 +4,55 @@
 @mixin page {
 
     #header {
-        display: flex;
-        flex-wrap: wrap;
         font-weight: 900;
         letter-spacing: .15em;
-        height: em(560);
         text-transform: uppercase;
-        padding: $spacing-huge * 1.25 $spacing-huge * 1.5 $spacing-huge * 2.5;
-
-        .vcard {
-            flex: 1;
-            flex-basis: 40%;
-            font-size: $font-size-small;
-            text-align: right;
-        }
+        padding-top: em(108);
+        position: relative;
     }
 
-    .vcard {
+    #vcard,
+    #nav {
+        top: 0;
+        font-size: $font-size-small;
+        padding: em($spacing-huge * 1.5, $spacing-small);
+    }
 
-        address {
-            font-style: normal;
+    #vcard {
+        position: absolute;
+        margin-left: auto;
+        text-align: right;
+        right: 0;
+        z-index: 4;
+    }
+
+    #nav {
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: em($breakpoint-huge, $font-size-small);
+        background-color: $color-white;
+        z-index: 3;
+        margin: 0 auto;
+        transition: padding-top .1s ease-out;
+
+        &.small {
+            padding-top: $spacing-large;
+            padding-bottom: $spacing-large;
+            transition: padding-top .2s ease-in;
         }
-
-        & > span {
-            display: block;
-        }
-
     }
 
     #logo {
         display: block;
-        flex: 1;
-        flex-basis: 100%;
         font-size: $font-size-huge;
         font-weight: 300;
         letter-spacing: .2em;
         line-height: 120%;
         height: 2.5em;
-        order: 3;
-        margin⁻bottom: $spacing-huge;
+        width: 11em;
+        margin: 4em auto 6em;
         text-align: center;
 
         strong {
@@ -53,21 +63,78 @@
         }
     }
 
-    #nav {
-        flex: 1;
-        flex-basis: 60%;
-        font-size: $font-size-small;
-    }
-
-    #banner {
-        margin-bottom: $spacing-large;
-        @include picture-ratio(2,1);
-    }
-
     #main,
     #footer {
         visibility: hidden;
         opacity: 0;
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        h1, h2, h3 {
+            text-transform: uppercase;
+        }
+    }
+
+    .vcard {
+        address {
+            font-style: normal;
+        }
+        & > span {
+            display: block;
+        }
+    }
+
+}
+
+// page small
+@mixin page-small {
+
+    #nav {
+
+        & > a {
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    .banner {
+        @include picture-ratio(4,3);
+    }
+
+}
+
+
+// page large
+@mixin page-large {
+    body {
+        margin: 0 auto;
+        max-width: $breakpoint-huge;
+    }
+}
+
+
+
+// page loaded (non-critical)
+@mixin page-loaded {
+    #main,
+    #footer {
+        visibility: visible;
+        animation: 0.15s ease-out 0.25s 1 fadeIn forwards;
+    }
+
+    #main img.lazyloaded {
+        animation-delay: .25s;
+    }
+
+    .banner {
+        margin-bottom: $spacing-large;
+        @include picture-ratio(2,1);
     }
 
     .box {
@@ -113,61 +180,6 @@
         }
     }
 
-    article {
-        display: flex;
-        flex-wrap: wrap;
-
-        h1, h2, h3 {
-            text-transform: uppercase;
-        }
-
-    }
-}
-
-// page small
-@mixin page-small {
-
-    #nav {
-        padding: 0;
-
-        & > a {
-            width: 30px;
-            height: 30px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-        }
-
-    }
-
-    #banner {
-        @include picture-ratio(4,3);
-    }
-}
-
-
-// page large
-@mixin page-large {
-    body {
-        margin: 0 auto;
-        max-width: $breakpoint-huge;
-    }
-}
-
-
-
-// page loaded (non-critical)
-@mixin page-loaded {
-    #main,
-    #footer {
-        visibility: visible;
-        animation: 0.15s ease-out 0.25s 1 fadeIn forwards;
-    }
-
-    #main img.lazyloaded {
-        animation-delay: .25s;
-    }
-
 }
 
 @mixin focus-effect-line (
@@ -191,6 +203,39 @@
         &:focus:after,
         &:active:after {
             background-size: 240%;
+        }
+    }
+}
+
+// menu dropdown
+@mixin menu-slide-left (
+    $background: $color-white,
+    $selector: "#nav > ul"
+) {
+    #{$selector} {
+        display: block;
+        position: fixed;
+        top: em(108);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        padding: $spacing-huge * 1.5;
+        background: rgba($background, 0.95);
+        transition: transform .015s ease-in-out;
+        transform: translateX(-100%);
+
+        li {
+            margin-bottom: $spacing-medium;
+        }
+
+        a {
+            display: inline-block;
+        }
+
+        &.active {
+            transform: translateX(0);
+            transition: transform .25s ease-in-out;
         }
     }
 }

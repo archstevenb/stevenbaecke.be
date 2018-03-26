@@ -24,9 +24,10 @@ layout: default
 
 </article>
 
-{% assign pane = site.pages | where:"permalink","/informatie" | first %}
+{% for url in page.pages %}
+{% assign pane = site.pages | where:"permalink", url | first %}
 
-<article class="page">
+<article class="page" id="{{ pane.permalink | slice: 1,pane.permalink.size }}">
     <div class="box">
         <h1>{{ pane.title }}</h1>
         {{ pane.content | markdownify | replace: "\", "<br />" }}
@@ -47,4 +48,4 @@ layout: default
 
 </article>
 
-
+{% endfor %}

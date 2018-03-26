@@ -1,41 +1,26 @@
 ---
 title: Contactformulier
-name: example
+name: contact
 success: /bericht-verzonden
 fields:
-  - label: Volledige naam
-    name: name
-    required: true
-    type: text
-
-  - label: Email
-    name: E-mail
-    required: true
-    type: email
-
-  - label: Select
-    name: Select
+  - label: Kies een onderwerp
+    name: onderwerp
     required: true
     type: select
     options:
-      - Option 1
-      - Option 2
+      - Afspraak maken
+      - Informatie aanvragen
+      - Vraag stellen
 
-  - label: Checkboxes
-    name: checkboxes
-    type: checkboxes
-    required: false
-    options:
-      - Option 1
-      - Option 2
+  - label: Volledige naam
+    name: naam
+    required: true
+    type: text
 
-  - label: Radios
-    name: radios
-    type: radios
-    required: false
-    options:
-      - Option 1
-      - Option 2  
+  - label: E-mail adres
+    name: email
+    required: true
+    type: email
 
   - label: Bericht
     name: message

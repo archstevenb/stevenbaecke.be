@@ -1,10 +1,13 @@
+{% if page.layout == "frontpage" %}
+<span id="home" class="hidden">Home</span>
+{% endif %}
 <header id="header">
 
-    <a id="logo"href="/"><strong>Architect</strong> Steven Baecke</a>
+    <h1 id="logo" href="/"><strong>Architect</strong> Steven Baecke</h1>
 
     {% include navigation.html %}
 
-    <div class="vcard">
+    <div id="vcard" class="vcard">
 
         {% assign info = site.data.info %}
 
