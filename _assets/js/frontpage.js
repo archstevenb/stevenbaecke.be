@@ -2,6 +2,9 @@
 //= require js/plugins/gumshoe.min.js
 
 var scroll = new SmoothScroll("[data-scroll]");
-gumshoe.init();
+gumshoe.init({
+    offset: 250px,
+    scrollDelay: true
+});
 
 
