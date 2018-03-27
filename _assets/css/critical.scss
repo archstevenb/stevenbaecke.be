@@ -22,7 +22,8 @@
 
 // include menu component
 @include menu (
-    $selector: "#nav"
+    $selector: "#nav",
+    $font-size: $font-size-small
 );
 
 // include menu link component

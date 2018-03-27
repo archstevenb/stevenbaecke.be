@@ -2,52 +2,11 @@
 layout: default
 ---
 
-<article class="frames">
-
-    <div class="box dark">
-        <h1>{{ page.title }}</h1>
-        {{ content | replace: "\", "<br />" }}
-    </div>
-
-    {% if page.images %}
-        {% for image in page.images %}
-        <figure class="box">
-            {% include components/image.html image=image.url alt=image.alt style="card" %}
-            {% if image.caption %}
-                <figcaption>
-                    {{ image.caption }}
-                </figcaption>
-            {% endif %}
-        </figure>
-        {% endfor %}
-    {% endif %}
-
-</article>
+{% include frame.html page=page %}
 
 {% for url in page.pages %}
-{% assign pane = site.pages | where:"permalink", url | first %}
-
-<article class="page" id="{{ pane.permalink | slice: 1,pane.permalink.size }}">
-    <div class="content">
-        <h1>{{ pane.title }}</h1>
-        {{ pane.content | markdownify | replace: "\", "<br />" }}
-    </div>
-
-    {% if pane.images %}
-    <aside>
-        {% for image in pane.images %}
-        <figure class="box">
-            {% include components/image.html image=image.url alt=image.alt style="card" %}
-            {% if image.caption %}
-                <figcaption>
-                    {{ image.caption }}
-                </figcaption>
-            {% endif %}
-        </figure>
-        {% endfor %}
-    </aside>
-    {% endif %}
-
-</article>
-
+{% assign item = site.pages | where:"permalink", url | first %}
+{% include page.html page=item %}
 {% endfor %}
+
+

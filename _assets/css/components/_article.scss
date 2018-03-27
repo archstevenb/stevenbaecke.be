@@ -1,15 +1,33 @@
 @mixin article() {
 
+    article {
+        display: flex;
+        flex: 1 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: $spacing-huge 0;
+
+        a {
+            color: $color-link;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $color-black;
+            }
+        }
+    }
+
     .frames {
 
         & > div {
-            padding: 3em;
+            padding: $spacing-huge;
             order: 3;
         }
 
         .box {
             flex: 1 50%;
-            
+
             &:nth-child(3) picture:before {
                 background-color: #FCF9ED;
             }
@@ -42,7 +60,6 @@
 
     .page {
         padding: $spacing-huge;
-        margin: $spacing-huge;
         min-height: 100%;
 
         .content {
@@ -51,19 +68,23 @@
 
         .content,
         aside {
-            margin-bottom: $spacing-huge;
+            margin-bottom: $spacing-huge * 2;
             flex: 1 100%;
         }
 
         aside {
             display: flex;
-            max-width: em(400);
+            max-width: em(420);
 
             & > figure {
                 flex: 1;
             }
+
+            & + .content {
+                max-width: em(760);
+            }
         }
-        
+
         picture:before {
             background-color: $color-white;
         }
@@ -75,8 +96,36 @@
         h2 {
             font-size: $font-size-large;
             margin: $spacing-huge 0 $spacing-small;
+            letter-spacing: .2em;
         }
 
+    }
+
+
+    .map {
+        flex: 1 100%;
+        position: relative;
+        margin: $spacing-huge $spacing-huge 0;
+
+        &:before {
+            content: "";
+            background-color: $color-silver;
+            width: 100%;
+            display: block;
+            padding-top: 75%;
+        }
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        & + .page {
+            margin-top: 0;
+        }
     }
 
 
@@ -96,7 +145,6 @@
 
 
     .dark {
-        font-size: 0.9em;
         background-color: $color-black;
         color: $color-white;
 
@@ -117,10 +165,31 @@
     }
 
 
-    .buttons {
-        display: flex;
+    form label {
+        display: none;
     }
 
+    .input {
+        font-family: $base-font-family;
+        font-style: italic;
+        
+        &:focus {
+            font-style: normal;
+        }
+    }
+
+    ::placeholder {
+        color: $color-text;
+    }
+
+    textarea.input {
+        border-width: 1px;
+        padding: $spacing-medium;
+    }
+    
+    form div:last-child {
+        margin-top: $spacing-huge;
+    }
 }
 
 
@@ -128,13 +197,40 @@
 @mixin article-medium() {
 
     .page {
+        padding: $spacing-huge * 2;
+
         .content {
             flex-basis: 65%;
-            padding: 0 $spacing-huge * 2;
+            padding-left: $spacing-huge * 2;
         }
+
         aside {
             flex-basis: 35%;
         }
+
+    }
+
+    .map {
+        flex-basis: 50%;
+        margin: $spacing-medium 0;
+
+        &:before {
+            height: auto;
+        }
+        & + .page {
+           flex-basis: 50%;
+           margin-bottom: 0;
+           
+           .content {
+                padding-left: 0;
+                margin-bottom: 0;
+           }
+        }
+    }
+
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
     }
 
 }
@@ -152,7 +248,24 @@
         }
     }
 
-    .page {
-        padding: $spacing-huge * 3;
-     }
+    .map {
+        flex-basis: 45%;
+
+        &:before {
+            height: 100%;
+        }
+
+        & + .content,
+        & + aside + .content {
+            flex-basis: 55%;
+            padding-left: $spacing-huge * 2;
+        }
+
+        & + aside {
+            order: 3;
+            flex-basis: 100%;
+            justify-content: center;
+        }
+    }
+
 }

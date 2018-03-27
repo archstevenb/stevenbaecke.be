@@ -1,8 +1,8 @@
 
 // colors
 $color-text: $color-black;
-$color-link: $color-blue;
-$color-focus: darken($color-blue,10);
+$color-link: lighten($color-black, 15);
+$color-focus: $color-black;
 $color-border: $color-silver;
 $color-primary: $color-blue;
 $color-secondary: $color-navy;

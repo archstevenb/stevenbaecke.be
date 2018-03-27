@@ -25,13 +25,31 @@
 @include keyframes;
 
 // include button component
-@include button;
+@include button (
+    $background-color: $color-white,
+    $background-color-hover: $color-black,
+    $border-color: $color-black,
+    $border-width: 2px,
+    $border-style: solid,
+    $color: $color-black,
+    $text-transform: uppercase,
+    $letter-spacing: .2em,
+    $font-size: $font-size-small,
+    $font-weight: 900,
+    $padding: $spacing-medium $spacing-large
+);
 
 // include form component
 @include form;
 
 // include input component
-@include input;
+@include input (
+    $border-width: 0 0 1px,
+    $border-color: $color-black,
+    $border-color-focus: $color-gray,
+    $margin: $spacing-large 0,
+    $padding: em(12) 0
+);
 
 // include list  component
 @include list;

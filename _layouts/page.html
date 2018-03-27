@@ -2,26 +2,4 @@
 layout: default
 ---
 
-<article class="page">
-
-    <div class="content">
-        <h1>{{ page.title }}</h1>
-        {{ content | replace: "\", "<br />" }}
-    </div>
-
-    {% if page.images %}
-    <aside>
-        {% for image in page.images %}
-        <figure class="box">
-            {% include components/image.html image=image.url alt=image.alt style="card" %}
-            {% if image.caption %}
-                <figcaption>
-                    {{ image.caption }}
-                </figcaption>
-            {% endif %}
-        </figure>
-        {% endfor %}
-    </aside>
-    {% endif %}
-
-</article>
+{% include page.html page=page %}

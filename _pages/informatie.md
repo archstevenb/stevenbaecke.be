@@ -31,12 +31,12 @@ De bouwheer voert de werken uit en de architect doet **nazicht en controle**.
 
 [//]: # links
 ## Interessante links
-- [www.energiesparen.be](www.energiesparen.be])
-- [www.energiesparen.be](www.energiesparen.be])
-- [www.energiesparen.be](www.energiesparen.be])
+- [www.energiesparen.be](/)
+- [www.energiesparen.be](/)
+- [www.energiesparen.be](/)
 {: class="unstyled links"}
 
 [//]: # buttons
-- [www.energiesparen.be](www.energiesparen.be]){: class="button"}
-- [www.energiesparen.be](www.energiesparen.be]){: class="button"}
+- [Afspraak maken](/){: class="button"}
+- [Stel een vraag](/]){: class="button"}
 {: class="unstyled buttons"}

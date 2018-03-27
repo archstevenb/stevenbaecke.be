@@ -11,36 +11,42 @@
         position: relative;
     }
 
-    #vcard,
-    #nav {
-        top: 0;
-        padding: em($spacing-huge * 1.5, $spacing-small);
-    }
-
     #vcard {
         position: absolute;
-        font-size: $font-size-tiny;
-        margin-left: auto;
+        margin: em(2) 0 0 auto;
+        padding-left: 0;
         text-align: right;
-        right: 0;
+        top: $spacing-huge;
+        right: $spacing-huge;
         z-index: 4;
+
+        & > * {
+            font-size: $font-size-tiny;
+            display: block;
+        }
+
+        address {
+            font-style: normal;
+        }
+
     }
 
     #nav {
         position: fixed;
-        font-size: $font-size-small;
+        top: 0;
         left: 0;
         right: 0;
         width: 100%;
-        max-width: em($breakpoint-huge, $font-size-small);
+        max-width: $breakpoint-huge;
         background-color: $color-white;
         z-index: 3;
+        padding: $spacing-huge;
         margin: 0 auto;
         transition: padding-top .1s ease-out;
 
         &.small {
-            padding-top: $spacing-large;
-            padding-bottom: $spacing-large;
+            padding-top: $spacing-medium;
+            padding-bottom: $spacing-medium;
             transition: padding-top .2s ease-in;
         }
     }
@@ -51,7 +57,6 @@
         font-weight: 300;
         letter-spacing: .2em;
         line-height: 120%;
-        height: 2.5em;
         width: 11em;
         margin: 4em auto 7em;
         text-align: center;
@@ -70,21 +75,9 @@
         opacity: 0;
     }
 
-    article {
+    #main {
         display: flex;
         flex-wrap: wrap;
-        h1, h2, h3 {
-            text-transform: uppercase;
-        }
-    }
-
-    .vcard {
-        address {
-            font-style: normal;
-        }
-        & > span {
-            display: block;
-        }
     }
 
 }
