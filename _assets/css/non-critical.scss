@@ -100,7 +100,7 @@
 // MAX SMALL SCREEN
 // -----------------
 
-@media screen and (max-width: $breakpoint-small) {
+@media screen and (max-width: $breakpoint-medium) {
 
     // include menu dropdown component
     @include menu-slide-left (
