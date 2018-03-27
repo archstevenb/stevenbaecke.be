@@ -43,7 +43,7 @@
 // MIN SMALL SCREENS
 // ------------------
 
-@media screen and (min-width: $breakpoint-small) {
+@media screen and (min-width: $breakpoint-medium) {
 
     // include menu horizontal component
     @include menu-extended (
@@ -70,7 +70,7 @@
 // MAX SMALL SCREENS
 // ------------------
 
-@media screen and (max-width: $breakpoint-small) {
+@media screen and (max-width: $breakpoint-medium) {
 
     // page small
     @include page-small;

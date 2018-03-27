@@ -9,7 +9,8 @@
     "library/icons/hamburger",
     "library/components/cards",
     "variables",
-    "components/page";
+    "components/page",
+    "components/article";
 
 
 
@@ -55,6 +56,9 @@
 // include page loaded component
 @include page-loaded;
 
+@include article;
+
+// include focus effect
 @include focus-effect-line;
 
 // include card component
@@ -73,6 +77,8 @@
     // include button inline component
     @include button-inline;
 
+    // include frames large
+    @include article-medium;
 }
 
 
@@ -81,7 +87,10 @@
 // MIN MEDIUM SCREENS
 // ------------------
 
-@media screen and (min-width: $breakpoint-medium) {
+@media screen and (min-width: $breakpoint-large) {
+
+    // include frames large
+    @include article-large;
 
 }
 

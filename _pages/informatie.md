@@ -10,8 +10,8 @@ meta:
     url: /#informatie
     order: 2
 images:
-  - url: "plan.jpg"
-    alt: Plan
+  - url: "meeting.jpg"
+    alt: Vrijblijvende afspraak
 ---
 
 Een **vrijblijvende afspraak** is gratis en kan u altijd aanvragen, tijdens

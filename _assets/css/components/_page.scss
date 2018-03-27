@@ -52,7 +52,7 @@
         line-height: 120%;
         height: 2.5em;
         width: 11em;
-        margin: 4em auto 6em;
+        margin: 4em auto 7em;
         text-align: center;
 
         strong {
@@ -90,23 +90,13 @@
 
 // page small
 @mixin page-small {
-
-    #nav {
-
-        & > a {
-            width: 30px;
-            height: 30px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-        }
-
+    #nav > a {
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
     }
-
-    .banner {
-        @include picture-ratio(4,3);
-    }
-
 }
 
 
@@ -132,55 +122,8 @@
         animation-delay: .25s;
     }
 
-    .banner {
-        margin-bottom: $spacing-large;
-        @include picture-ratio(2,1);
-    }
-
-    .box {
-        @include picture-ratio();
-
-        figcaption {
-            display: none;
-        }
-    }
-
-    .dark {
-        background-color: $color-black;
-        color: $color-white;
-
-        * {
-            color: inherit;
-        }
-    }
-
-    .frames {
-        & > div {
-            padding: 3em;
-        }
-        .box {
-            flex: 1 33.33%;
-        }
-    }
-
-    .page {
-        padding: $spacing-huge $spacing-huge * 2;
-
-        .box {
-            margin: $spacing-huge;
-        }
-
-        & > div {
-            order: 3;
-            flex: 1 30%;
-        }
-
-        & > figure {
-            flex: 1;
-        }
-    }
-
 }
+
 
 @mixin focus-effect-line (
     $selector: "#nav ul  a",
