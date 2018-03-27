@@ -12,7 +12,7 @@ layout: default
     {% if page.images %}
     <aside>
         {% for image in page.images %}
-        <figure>
+        <figure class="box">
             {% include components/image.html image=image.url alt=image.alt style="card" %}
             {% if image.caption %}
                 <figcaption>
