@@ -10,7 +10,7 @@ meta:
     url: /#informatie
     order: 2
 images:
-  - url: "meeting.jpg"
+  - url: "meeting.png"
     alt: Vrijblijvende afspraak
 ---
 
