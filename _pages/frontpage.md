@@ -12,7 +12,7 @@ meta:
 images:
   - url: "plan.jpg"
     alt: Plan
-  - url: "lijntekening.jpg"
+  - url: "lijntekening.png"
     alt: Lijntekening
 pages:
   - /informatie
