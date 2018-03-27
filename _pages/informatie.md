@@ -27,3 +27,16 @@ Dit wordt digitaal ingediend, na de goedkeuring volgt de uitvoering en wordt er
 een uitvoeringsplan opgemaakt.
 
 De bouwheer voert de werken uit en de architect doet **nazicht en controle**.
+
+
+[//]: # links
+## Interessante links
+- [www.energiesparen.be](www.energiesparen.be])
+- [www.energiesparen.be](www.energiesparen.be])
+- [www.energiesparen.be](www.energiesparen.be])
+{: class="unstyled links"}
+
+[//]: # buttons
+- [www.energiesparen.be](www.energiesparen.be]){: class="button"}
+- [www.energiesparen.be](www.energiesparen.be]){: class="button"}
+{: class="unstyled buttons"}

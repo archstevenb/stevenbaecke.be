@@ -14,12 +14,12 @@
     #vcard,
     #nav {
         top: 0;
-        font-size: $font-size-small;
         padding: em($spacing-huge * 1.5, $spacing-small);
     }
 
     #vcard {
         position: absolute;
+        font-size: $font-size-tiny;
         margin-left: auto;
         text-align: right;
         right: 0;
@@ -28,6 +28,7 @@
 
     #nav {
         position: fixed;
+        font-size: $font-size-small;
         left: 0;
         right: 0;
         width: 100%;
