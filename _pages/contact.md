@@ -10,4 +10,7 @@ meta:
     url: /#contact
     order: 4
 ---
+
+{% include components/map.html width=500 height=500 src="https://www.google.com/maps/embed/v1/place?q=STOEPESTRAAT+18+-+9960+ASSENEDE&key=AIzaSyBQhdzM-IjtnsSoFz_CfbBCqcBhd5nQN9c" %}
+
 {% include components/form.html form="contact" %}
