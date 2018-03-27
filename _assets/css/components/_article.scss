@@ -9,6 +9,10 @@
 
         .box {
             flex: 1 50%;
+            
+            &:nth-child(3) picture:before {
+                background-color: #FCF9ED;
+            }
         }
 
         picture {
@@ -16,6 +20,7 @@
             overflow: hidden;
 
             &:before {
+                background-color: #ABB9DA;
                 height: 100%;
             }
         }
@@ -55,6 +60,10 @@
             & > figure {
                 flex: 1;
             }
+        }
+        
+        picture:before {
+            background-color: $color-white;
         }
 
         h1 {
