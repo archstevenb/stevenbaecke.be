@@ -217,10 +217,12 @@
         &:before {
             height: auto;
         }
+
         & + .page {
            flex-basis: 50%;
            margin-bottom: 0;
-           
+           padding: $spacing-huge * 3 $spacing-huge * 2;
+
            .content {
                 padding-left: 0;
                 margin-bottom: 0;
