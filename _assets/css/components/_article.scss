@@ -260,7 +260,7 @@
 
     .map {
         flex-basis: 50%;
-        margin: $spacing-medium 0 0;
+        margin: 0;
 
         &:before {
             height: auto;
@@ -268,8 +268,8 @@
 
         & + .page {
            flex-basis: 50%;
-           margin-bottom: 0;
-           padding: $spacing-huge * 3 $spacing-huge * 2;
+           margin: -$spacing-medium 0 0;
+           padding: $spacing-huge * 4 $spacing-huge * 2;
 
            .content {
                 padding-left: 0;
