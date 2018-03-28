@@ -209,6 +209,10 @@
             margin: 0;
             opacity: 0.6;
 
+            p {
+                max-width: none;
+            }
+
             & > div.box {
                 text-align: center;
             }

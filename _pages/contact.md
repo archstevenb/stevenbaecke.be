@@ -14,7 +14,7 @@ widgets:
 ---
 
 Stoepestraat 18 - 9960 Assenede \
-info@stevenbeacke.be \
+info@stevenbaecke.be \
 0472 570 162 \
 
 ## Stuur mij een bericht
