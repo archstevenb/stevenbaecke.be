@@ -37,6 +37,6 @@ De bouwheer voert de werken uit en de architect doet **nazicht en controle**.
 {: class="unstyled links"}
 
 [//]: # buttons
-- [Afspraak maken](/){: class="button"}
-- [Stel een vraag](/]){: class="button"}
+- [Afspraak maken](/#contact){: class="button"}
+- [Stel een vraag](/#contact){: class="button"}
 {: class="unstyled buttons"}

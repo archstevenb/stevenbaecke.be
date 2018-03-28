@@ -10,7 +10,7 @@ fields:
     options:
       - Afspraak maken
       - Informatie aanvragen
-      - Vraag stellen
+      - Stel een vraag
 
   - label: Volledige naam
     name: naam

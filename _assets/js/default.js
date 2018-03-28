@@ -1,56 +1,40 @@
 //= require js/plugins/astro.min.js
+//= require js/plugins/stickynav.js
 //= require js/plugins/lazysizes.min.js
 
+// Dropdown menu
 astro.init();
 
+// Sticky navigation
+var stickyNavigation = stickyNav(document.querySelector('#nav'), 28, 'small');
 
-var selectEvents = (function() {
+// Dropdownmenu close on hashchange
+window.addEventListener('hashchange', function() {
+    document.querySelector('#nav > ul').classList.remove('active');
+    document.querySelector('#nav > a').classList.remove('active');
+});
+
+// Click / touch
+var clickEvent = (function() {
     if ('ontouchstart' in document === true)
         return 'touchstart';
     else
         return 'click';
-})();
-
-
-var dropdown = document.querySelector('#nav > ul');
-dropdown.addEventListener(selectEvents, function() {
-    dropdown.classList.remove('active');
-    document.querySelector('#nav > a').classList.remove('active');
 });
 
-
-
-// Sticky Navigation
-var stickyNav = function(nav, y, c) {
-
-    // vars
-    var nav = nav, y = y, c = c;
-    var sticky = 0;
-
-    // handler
-    var eventHandler = function() {
-        if (document.documentElement.scrollTop > y) {
-            if (sticky === 0) {
-                nav.classList.add(c);
-                sticky = 1;
-            }
+// Contact buttons form subject changer
+var contactButtons = document.querySelectorAll("a.button[href='/#contact']");
+for (i = 0; i < contactButtons.length; i++) { 
+    contactButtons[i].addEventListener(clickEvent(), function(e) {
+        if (e.target.hash == '#contact') {
+            document.querySelector('#contact select[name="onderwerp"').value = e.target.text
         }
-        else {
-            nav.classList.remove(c);
-            sticky = 0;
-        }
-    }
-
-    // init
-    stickyNav.init = function() {
-        eventHandler();
-        window.addEventListener('scroll', eventHandler, false);
-    }
-
-    return stickyNav.init();
+    });
 }
 
 
-var stickyNavigation = stickyNav(document.querySelector('#nav'), 28, 'small');
+
+
+
 
 
