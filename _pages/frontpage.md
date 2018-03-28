@@ -16,6 +16,7 @@ images:
     alt: Lijntekening
 pages:
   - /informatie
+  - /projecten
   - /contact
 ---
 

@@ -190,6 +190,50 @@
     form div:last-child {
         margin-top: $spacing-huge;
     }
+
+    .projects {
+        padding-top: $spacing-medium;
+        flex-basis: 100%;
+
+        & > h1 {
+            text-align: center;
+            background-color: lighten($color-silver, 5);
+            margin: 0;
+            padding: $spacing-large $spacing-small $spacing-medium;
+            letter-spacing: em(2);
+            font-weight: 300;
+        }
+        
+        .frames {
+            transition: opacity .25s ease-in-out;
+            margin: 0;
+            opacity: 0.6;
+
+            & > div.box {
+                text-align: center;
+            }
+
+            &:nth-child(2) {
+                opacity: 1;
+
+                & > div.box {
+                    order: 4;
+                }
+            }
+        }
+
+        &:hover {
+            .frames {
+                opacity: 0.6;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+
 }
 
 
@@ -212,7 +256,7 @@
 
     .map {
         flex-basis: 50%;
-        margin: $spacing-medium 0;
+        margin: $spacing-medium 0 0;
 
         &:before {
             height: auto;

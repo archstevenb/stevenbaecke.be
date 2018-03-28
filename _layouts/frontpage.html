@@ -6,7 +6,11 @@ layout: default
 
 {% for url in page.pages %}
 {% assign item = site.pages | where:"permalink", url | first %}
+{% if item.layout == "page" %}
 {% include page.html page=item %}
+{% elsif item.layout == "projects" %}
+{% include projects.html page=item %}
+{% endif %}
 {% endfor %}
 
 

@@ -1,0 +1,29 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="nl">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include_cached svg/icons.svg %}
+
+    <h1 class="hidden">{{ site.title }}</h1>
+
+    {% include header.html %}
+
+    {% include banner.html %}
+
+    <main id="main">
+      {{ content }}
+    </main>
+
+    {% include_cached scripts.html %}
+
+    {% asset css/non-critical !type %}
+
+  </body>
+</html>
