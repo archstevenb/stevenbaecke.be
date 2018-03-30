@@ -4,7 +4,8 @@ backend:
   branch: master
 
 
-media_folder: "media/"
+media_folder: "/_assets/media/"
+public_folder: "media"
 
 
 collections:
