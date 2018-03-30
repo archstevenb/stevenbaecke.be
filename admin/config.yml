@@ -37,6 +37,14 @@ collections:
         name: pages
         required: false
         widget: list
+        field:
+          - label: "Page"
+            name: "url"
+            widget: "relation"
+            collection: "pages"
+            searchFields: ["title", "permalink"]
+            valueField: "permalink"
+
   - name: "posts"
     label: "Projects"
     label_singular: "project"
