@@ -4,7 +4,7 @@ permalink: /test
 layout: page
 meta:
   description: test
-  title: tes
+  title: test
 images:
   - alt: test
     caption: Test
