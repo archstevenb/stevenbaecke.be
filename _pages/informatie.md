@@ -6,7 +6,7 @@ meta:
   title: Een titel met zoveel mogelijk kernwoorden
   description: Een kort en bondige omschrijving met zoveel mogelijk kernwoorden zoals architect, nieuwbouw, verbouwingen, renovaties...
 images:
-  - url: "media/meeting.png"
+  - url: /media/meeting.png
     alt: Vrijblijvende afspraak
 ---
 # Met een persoonlijke aanpak wordt de klant begeleidt in het bouwproces
