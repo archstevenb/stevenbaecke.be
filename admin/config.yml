@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: "bert-bruggeman/base-jekyll-prototype"
+  repo: "archstevenb/stevenbaecke.be"
   branch: master
 
 
