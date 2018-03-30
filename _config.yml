@@ -10,6 +10,8 @@ remote_theme: bert-bruggeman/base-jekyll-theme
 
 # Build settings
 markdown: kramdown
+kramdown:
+  auto_ids: false
 plugins:
   - jekyll-sitemap
   - jekyll-remote-theme

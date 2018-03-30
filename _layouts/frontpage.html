@@ -2,7 +2,26 @@
 layout: default
 ---
 
-{% include card.html page=page %}
+<article class="card">
+
+    <div>
+        {{ content | replace: "\", "<br />" }}
+    </div>
+
+    {% if page.images %}
+        {% for image in page.images %}
+        <figure>
+            {% include components/image.html image=image.url alt=image.alt style="card" %}
+            {% if image.caption %}
+                <figcaption>
+                    {{ image.caption }}
+                </figcaption>
+            {% endif %}
+        </figure>
+        {% endfor %}
+    {% endif %}
+
+</article>
 
 {% for url in page.pages %}
 {% assign item = site.pages | where:"permalink", url | first %}

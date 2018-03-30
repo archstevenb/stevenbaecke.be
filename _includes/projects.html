@@ -1,7 +1,31 @@
 <section class="projects" id="{{ item.permalink | slice: 1, item.permalink.size }}">
-<h1>Projecten</h1>
-{% for post in site.posts %}
-{% include card.html page=post%}
-{% endfor %}
+
+    <h1>Projecten</h1>
+
+    {% for post in site.posts %}
+    <article class="card">
+
+        <div>
+            <h1>{% if post.subtitle %}<strong>{{ post.subtitle }}</strong> {% endif %}{{ post.title }}</h1>
+            {{ post.content | markdownify | replace: "\", "<br />" }}
+        </div>
+
+        {% if post.images %}
+            {% for image in post.images %}
+            <figure>
+                {% include components/image.html image=image.url alt=image.alt style="card" %}
+                {% if image.caption %}
+                    <figcaption>
+                        {{ image.caption }}
+                    </figcaption>
+                {% endif %}
+            </figure>
+            {% endfor %}
+        {% endif %}
+
+    </article>
+
+    {% endfor %}
+
 </section>
 

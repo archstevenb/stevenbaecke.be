@@ -5,5 +5,6 @@ var scroll = new SmoothScroll("[data-scroll]");
 
 
 gumshoe.init ({
+    offset: 120,
     scrollDelay: true
 });

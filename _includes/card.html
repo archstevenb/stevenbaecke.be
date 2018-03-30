@@ -1,9 +1,6 @@
-{% assign item = include.page %}
-
 <article class="card">
 
     <div>
-        <h1>{% if item.subtitle %}<strong>{{ item.subtitle }}</strong> {% endif %}{{ item.title }}</h1>
         {{ item.content | markdownify | replace: "\", "<br />" }}
     </div>
 

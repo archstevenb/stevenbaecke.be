@@ -1,16 +1,24 @@
-<nav id="nav" data-gumshoe-header>
-    <h2 class="hidden">Menu</h2>
+<nav id="nav">
+    <h2 class="hidden">{{ site.data.menu.title }}</h2>
     <a href="#" data-nav-toggle="[data-nav-menu]">
-        <span>Menu</span>
+        <span>{{ site.data.menu.title }}</span>
     </a>
     <ul data-nav-menu data-gumshoe>
-        {% assign pages = site.pages | where_exp: "item", "item.meta.menu.order != null" | sort: "meta.menu.order" %}
-        {% for item in pages %}
-        <li>
-            <a data-scroll href="{{ item.meta.menu.url }}"{% if item.permalink == page.permalink or (item.permalink.size > 4 and page.permalink contains item.permalink) %} class="active"{% endif %}>
-                <span>{{ item.meta.menu.title }}</span>
-            </a>
-        </li>
+        {% assign current = page.permalink %}
+        {% assign hash = current | remove_first: "/" | prepend: "/#" %}
+
+        {% for link in site.data.menu.links %}
+
+            <li>
+                <a data-scroll href="{{ link.url }}" {% if link.url == current or link.url == hash %} class="active"{% endif %}>
+                    {{ link.title }}
+                </a>
+            </li>
+
         {% endfor %}
     </ul>
 </nav>
+
+
+
+

@@ -1,14 +1,14 @@
 title: Menu
 links:
-  - description: description
-    link: /
+  - description: Omschrijving met zoveel mogelijk kernwoorden
+    url: /#home
     title: Home
-  - description: description
-    link: /informatie
+  - description: Omschrijving met zoveel mogelijk kernwoorden
+    url: /#informatie
     title: Informatie
-  - description: description
-    link: /form
-    title: Contact
-  - description: description
-    link: /blog
+  - description: Omschrijving met zoveel mogelijk kernwoorden
+    url: /#projecten
     title: Projecten
+  - description: Omschrijving met zoveel mogelijk kernwoorden
+    url: /#contact
+    title: Contact

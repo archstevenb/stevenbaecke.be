@@ -25,7 +25,6 @@
     {% endif %}
 
     <div>
-        <h1>{{ item.title }}</h1>
         {{ item.content | markdownify | replace: "\", "<br />" }}
     </div>
 
