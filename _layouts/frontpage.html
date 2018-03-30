@@ -23,8 +23,8 @@ layout: default
 
 </article>
 
-{% for url in page.pages %}
-{% assign item = site.pages | where:"permalink", url | first %}
+{% for page-item in page.pages %}
+{% assign item = site.pages | where:"permalink", page-item.url | first %}
 {% if item.layout == "page" %}
 {% include page.html page=item %}
 {% elsif item.layout == "projects" %}

@@ -11,9 +11,9 @@ images:
   - url: "lijntekening.png"
     alt: Lijntekening
 pages:
-  - /informatie
-  - /projecten
-  - /contact
+  - url: /informatie
+  - url: /projecten
+  - url: /contact
 ---
 # Architect Steven Baecke staat in voor kleine en grote projecten.
 
