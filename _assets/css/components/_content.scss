@@ -1,0 +1,13 @@
+@mixin content() {
+
+    .links {
+        border-top: 2px solid $color-border;
+        margin: $spacing-medium 0 $spacing-huge * 2;
+
+        & > li {
+            border-bottom: 2px solid $color-border;
+            padding: $spacing-tiny 0;
+        }
+    }
+
+}

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% include frame.html page=page %}
+{% include card.html page=page %}
 
 {% for url in page.pages %}
 {% assign item = site.pages | where:"permalink", url | first %}

@@ -1,0 +1,200 @@
+// PAGE COMPONENTS
+$nav-height: em(72);
+$nav-height-large: em(110);
+
+// page (critical)
+@mixin layout {
+
+    #header {
+        font-weight: 900;
+        letter-spacing: .15em;
+        text-transform: uppercase;
+        padding-top: $nav-height;
+        position: relative;
+    }
+
+    #vcard {
+        position: absolute;
+        margin: em(2) 0 0 auto;
+        padding-left: 0;
+        text-align: right;
+        top: $spacing-huge;
+        right: $spacing-huge;
+        z-index: 4;
+
+        & > * {
+            font-size: $font-size-tiny;
+            display: block;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+    }
+
+    #nav {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: $nav-height-large;
+        max-width: $breakpoint-huge;
+        background-color: $color-white;
+        z-index: 3;
+        padding-left: $spacing-huge;
+        margin: 0 auto;
+        transition: height .1s ease-out;
+
+        &.small {
+            height: $nav-height;
+            transition: height .2s ease-in;
+        }
+    }
+
+    #logo {
+        display: block;
+        font-size: $font-size-huge;
+        font-weight: 300;
+        letter-spacing: .2em;
+        line-height: 120%;
+        width: 11em;
+        margin: 5em auto;
+        text-align: center;
+
+        strong {
+            display: block;
+            font-weight: 900;
+            font-size: em($font-size-medium, $font-size-huge);
+            letter-spacing: .75em;
+        }
+    }
+
+    main,
+    #footer {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: em(200);
+        font-size: $font-size-small;
+        color: $color-gray;
+    }
+
+    main,
+    article {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main > article,
+    main > section {
+        padding-top: $nav-height;
+        flex: 1 100%;
+    }
+
+}
+
+// page small
+@mixin layout-small {
+    #nav > a {
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+// page large
+@mixin layout-large {
+    body {
+        margin: 0 auto;
+        max-width: $breakpoint-huge;
+    }
+}
+
+
+
+// page loaded (non-critical)
+@mixin layout-loaded {
+    #main,
+    #footer {
+        visibility: visible;
+        animation: 0.15s ease-out 0.25s 1 fadeIn forwards;
+    }
+
+    #main img.lazyloaded {
+        animation-delay: .25s;
+    }
+
+}
+
+
+@mixin focus-effect-line (
+    $selector: "#nav ul  a",
+    $spacing: .4em
+) {
+    #{$selector} {
+        &:after {
+            content: "";
+            display: block;
+            height: em(3, $font-size-small);
+            margin-top: $spacing;
+            @include focus-effect-background-image($color-text);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 0%;
+            transition: background-size .4s ease-in-out;
+        }
+
+        &.active:after,
+        &:focus:after,
+        &:active:after {
+            background-size: 240%;
+        }
+    }
+}
+
+// menu dropdown
+@mixin menu-slide-left (
+    $background: $color-white,
+    $selector: "#nav > ul"
+) {
+    #{$selector} {
+        display: block;
+        position: fixed;
+        top: $nav-height;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        padding: $spacing-huge * 1.5;
+        background: rgba($background, 0.95);
+        transition: transform .015s ease-in-out;
+        transform: translateX(-100%);
+
+        li {
+            margin-bottom: $spacing-medium;
+        }
+
+        a {
+            display: inline-block;
+        }
+
+        &.active {
+            transform: translateX(0);
+            transition: transform .25s ease-in-out;
+        }
+    }
+}
+

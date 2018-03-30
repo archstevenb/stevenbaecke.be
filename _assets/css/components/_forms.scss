@@ -1,0 +1,29 @@
+@mixin contact-form() {
+
+    form label {
+        display: none;
+    }
+
+    .input {
+        font-family: $base-font-family;
+        font-style: italic;
+ 
+        &:focus {
+            font-style: normal;
+        }
+    }
+
+    ::placeholder {
+        color: $color-text;
+    }
+
+    textarea.input {
+        border-width: 1px;
+        padding: $spacing-medium;
+    }
+
+    form div:last-child {
+        margin-top: $spacing-huge;
+    }
+
+}

@@ -7,7 +7,7 @@
     "library/library",
     "library/icons/hamburger",
     "variables",
-    "components/page";
+    "components/layout";
 
 
 // ------------
@@ -17,26 +17,18 @@
 // include fonts
 @include fonts-critical;
 
-// include base component
+// include library components
 @include base;
-
-// include menu component
 @include menu (
     $selector: "#nav",
-    $font-size: $font-size-small
+    $font-size: $font-size-small,
 );
-
-// include menu link component
 @include link (
     $margin: 0 $spacing-huge 0 0,
     $selector: "#nav ul a"
 );
-
-// include page component
 @include picture;
-
-// include page component
-@include page;
+@include layout;
 
 
 
@@ -46,7 +38,7 @@
 
 @media screen and (min-width: $breakpoint-medium) {
 
-    // include menu horizontal component
+    // include library components
     @include menu-extended (
         $orientation: "horizontal",
         $selector: "#nav"
@@ -61,8 +53,8 @@
 
 @media screen and (min-width: $breakpoint-large) {
 
-    // include page large component
-    @include page-large;
+    // include theme components
+    @include layout-large;
 }
 
 
@@ -73,14 +65,15 @@
 
 @media screen and (max-width: $breakpoint-medium) {
 
-    // page small
-    @include page-small;
-
-    // include hamburger-icon
+    // include library components
     @include hamburger-icon (
         $selector: "#nav > a > span",
         $color: $color-black,
     );
+
+    // include theme components
+    @include layout-small;
+
 }
 
 

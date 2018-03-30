@@ -10,9 +10,9 @@
 <article class="page" id="{{ item.permalink | slice: 1, item.permalink.size }}">
 
     {% if item.images %}
-    <aside>
+    <aside{% if item.images.size > 2 %} class="gallery"{% endif %}>
         {% for image in item.images %}
-        <figure class="box">
+        <figure>
             {% include components/image.html image=image.url alt=image.alt style="card" %}
             {% if image.caption %}
                 <figcaption>
@@ -24,7 +24,7 @@
     </aside>
     {% endif %}
 
-    <div class="content">
+    <div>
         <h1>{{ item.title }}</h1>
         {{ item.content | markdownify | replace: "\", "<br />" }}
     </div>

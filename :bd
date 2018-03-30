@@ -1,0 +1,59 @@
+@mixin map() {
+
+    .map {
+        padding-top: 0;
+        order: 99;
+
+        iframe {
+            width: 100%;
+            height: em(400);
+        }
+    }
+
+}
+
+
+@mixin map-medium() {
+
+    .map {
+        iframe {
+            height: em(560);
+        }
+    }
+
+}
+
+@mixin map-large() {
+
+    .map {
+        padding-top: $nav-height;
+        margin-top: -$nav-height;
+        order: initial;
+        margin-bottom: 0;
+        flex-basis: 50%;
+
+        iframe {
+            height: 100%;
+        }
+
+        & + .page {
+            padding-top: $nav-height + ($spacing-huge * 2);
+            margin-top: -$nav-height;
+            min-height: 100vw;
+            flex-basis: 50%;
+
+            aside {
+                order: 3;
+                flex-basis: 100%;
+                justify-content: center;
+
+                & + div {
+                    padding-left: $spacing-huge;
+                }
+            }
+
+        }
+
+    }
+
+}

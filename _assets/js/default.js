@@ -27,6 +27,9 @@ var contactButtons = document.querySelectorAll("a.button[href='/#contact']");
 for (i = 0; i < contactButtons.length; i++) { 
     contactButtons[i].addEventListener(clickEvent(), function(e) {
         if (e.target.hash == '#contact') {
+            if (scroll) {
+                scroll.animateScroll(document.querySelector(e.target.hash));
+            }
             document.querySelector('#contact select[name="onderwerp"').value = e.target.text
         }
     });

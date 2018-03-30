@@ -1,5 +1,5 @@
 ---
 layout: default
 ---
-
-{% include page.html page=page %}
+{% assign item = site.pages | where:"permalink", page.permalink | first %}
+{% include page.html page=item %}

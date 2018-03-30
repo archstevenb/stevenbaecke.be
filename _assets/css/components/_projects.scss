@@ -1,0 +1,83 @@
+@mixin projects() {
+
+    .projects {
+        flex-basis: 100%;
+
+        & > h1 {
+            text-align: center;
+            background-color: lighten($color-silver, 10);
+            margin: 0;
+            padding: $spacing-large $spacing-small $spacing-medium;
+            letter-spacing: em(2);
+            font-weight: 300;
+        }
+
+        .card {
+            transition: opacity .25s ease-in-out;
+            margin: 0;
+            opacity: 0.6;
+            text-align: center;
+
+            h1 {
+                font-weight: 300;
+                font-size: $font-size-huge;
+                letter-spacing: .2em;
+
+                strong {
+                    display: block;
+                    font-size: em($font-size-large,$font-size-huge);
+                }
+            }
+
+            p {
+                max-width: none;
+            }
+
+            &:nth-child(2) {
+                opacity: 1;
+
+                & > .card div {
+                    order: 4;
+                }
+            }
+        }
+
+        &:hover {
+            .card {
+                opacity: 0.6;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+        }
+    }
+
+}
+
+@mixin projects-large() {
+
+    .projects .card {
+
+        &:nth-of-type(2n) > div {
+            order: 3;
+        }
+
+        &:nth-of-type(3n) > div {
+            order: 2;
+            & + figure {
+                order: 1;
+                & + figure {
+                    order: 3
+                }
+            }
+        }
+
+        & > div {
+            padding-top: em(120);
+        }
+
+    }
+
+}

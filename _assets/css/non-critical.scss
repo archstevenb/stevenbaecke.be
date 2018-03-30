@@ -7,10 +7,14 @@
     "fonts",
     "library/library",
     "library/icons/hamburger",
-    "library/components/cards",
     "variables",
+    "components/layout",
     "components/page",
-    "components/article";
+    "components/content",
+    "components/card",
+    "components/projects",
+    "components/forms",
+    "components/map";
 
 
 
@@ -21,10 +25,8 @@
 // include fonts
 @include fonts-non-critical;
 
-// include keyframes component
+// include library components
 @include keyframes;
-
-// include button component
 @include button (
     $background-color: $color-white,
     $background-color-hover: $color-black,
@@ -36,13 +38,10 @@
     $letter-spacing: .2em,
     $font-size: $font-size-small,
     $font-weight: 900,
-    $padding: $spacing-medium $spacing-large
+    $padding: $spacing-medium $spacing-large,
+    $margin: 0 $spacing-medium $spacing-medium 0
 );
-
-// include form component
 @include form;
-
-// include input component
 @include input (
     $border-width: 0 0 1px,
     $border-color: $color-black,
@@ -50,40 +49,28 @@
     $margin: $spacing-large 0,
     $padding: em(12) 0
 );
-
-// include list  component
-@include list;
-
-// include table component
+@include list (
+    $selector-suffix: ":not(.links):not(.buttons)"
+);
 @include table (
     $text-align: center
 );
-
-// include text-link component
 @include text-link (
     $border-bottom: 2px solid $color-link,
     $selector: "p a"
 );
-
-// include blockquote component
 @include blockquote;
-
-// include page loaded component
 @include picture-loaded;
+@include layout-loaded;
 
-// include page loaded component
-@include page-loaded;
-
-@include article;
-
-// include focus effect
+// include theme components
 @include focus-effect-line;
-
-// include card component
-@include card (
-    $margin-bottom: $spacing-medium,
-);
-
+@include card;
+@include page;
+@include content;
+@include projects;
+@include contact-form;
+@include map;
 
 
 // ----------------
@@ -92,13 +79,13 @@
 
 @media screen and (min-width: $breakpoint-small) {
 
-    // include button inline component
+    // include library components
     @include button-inline;
 
-    // include frames large
-    @include article-medium;
+    // include theme components
+    @include page-medium;
+    @include map-medium;
 }
-
 
 
 // ------------------
@@ -107,11 +94,12 @@
 
 @media screen and (min-width: $breakpoint-large) {
 
-    // include frames large
-    @include article-large;
+    // include theme components
+    @include card-large;
+    @include projects-large;
+    @include map-large;
 
 }
-
 
 
 // -----------------
@@ -120,12 +108,10 @@
 
 @media screen and (max-width: $breakpoint-medium) {
 
-    // include menu dropdown component
+    // include library components
     @include menu-slide-left (
         $selector: "#nav > ul",
     );
-
-    // include hamburger icon close component
     @include hamburger-icon-close (
         $selector: "#nav > a.active > span",
     );

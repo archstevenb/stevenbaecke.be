@@ -1,7 +1,7 @@
 <section class="projects" id="{{ item.permalink | slice: 1, item.permalink.size }}">
 <h1>Projecten</h1>
 {% for post in site.posts %}
-{% include frame.html page=post%}
+{% include card.html page=post%}
 {% endfor %}
 </section>
 

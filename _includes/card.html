@@ -1,15 +1,15 @@
 {% assign item = include.page %}
 
-<article class="frames">
+<article class="card">
 
-    <div class="box dark">
-        <h1>{{ item.title }}</h1>
+    <div>
+        <h1>{% if item.subtitle %}<strong>{{ item.subtitle }}</strong> {% endif %}{{ item.title }}</h1>
         {{ item.content | markdownify | replace: "\", "<br />" }}
     </div>
 
     {% if item.images %}
         {% for image in item.images %}
-        <figure class="box">
+        <figure>
             {% include components/image.html image=image.url alt=image.alt style="card" %}
             {% if image.caption %}
                 <figcaption>

@@ -1,0 +1,60 @@
+@mixin card() {
+    .card {
+
+        div {
+            background-color: $color-black;
+            color: $color-white;
+            flex: 1 100%;
+            order: 3;
+            padding: $spacing-huge;
+
+            * {
+                color: inherit;
+            }
+
+        }
+
+        figure {
+            flex: 1 50%;
+        }
+
+        picture {
+            height: 100%;
+            overflow: hidden;
+
+            &:before {
+                background-color: #ABB9DA;
+                height: 100%;
+                padding-top: 100%;
+            }
+        }
+
+        img {
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: auto;
+            max-width: none;
+        }
+
+        p {
+            max-width: em(600);
+        }
+    }
+
+}
+
+
+@mixin card-large() {
+    .card {
+        figure,
+        div {
+            flex-basis: 33%;
+        }
+
+        div {
+            order: 0;
+        }
+    }
+
+}
