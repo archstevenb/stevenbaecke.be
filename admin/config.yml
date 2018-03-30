@@ -35,8 +35,8 @@ collections:
           - {label: "Caption", name: "caption", widget: "string", required: false }
           
   - name: "posts"
-    label: "Posts"
-    label_singular: "post"
+    label: "Projects"
+    label_singular: "project"
     folder: "_collections/_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
