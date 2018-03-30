@@ -8,6 +8,6 @@ meta:
 images:
   - alt: test
     caption: Test
-    url: /media/lijntekening.png
+    url: media/lijntekening.png
 ---
 ## Test
