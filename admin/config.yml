@@ -34,10 +34,10 @@ collections:
           - {label: "Alt", name: "alt", widget: "string", required: false }
           - {label: "Caption", name: "caption", widget: "string", required: false }
       - label: "Pages"
-        name: "pages"
+        name: pages
         widget: "relation"
         collection: "pages"
-        searchFields: ["title"]
+        searchFields: ["title", "permalink"]
         valueField: "permalink"
 
   - name: "posts"
