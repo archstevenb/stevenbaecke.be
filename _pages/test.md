@@ -7,5 +7,7 @@ meta:
   title: test
 images:
   - url: /media/plan.jpg
+  - url: /media/lijntekening.png
+  - url: /media/meeting.png
 ---
 Test
