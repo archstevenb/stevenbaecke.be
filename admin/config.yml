@@ -33,7 +33,8 @@ collections:
           - {label: "Image", name: "url", widget: "image", required: false }
           - {label: "Alt", name: "alt", widget: "string", required: false }
           - {label: "Caption", name: "caption", widget: "string", required: false }
-      - label: "Pages"
+      - label: "Embedded pages"
+        label_singular: "page"
         name: pages
         required: false
         widget: list
