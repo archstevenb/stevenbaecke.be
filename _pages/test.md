@@ -9,6 +9,6 @@ images:
   - alt: test
     caption: Test
     url: lijntekening.png
-  - url: /_assets/media/meeting.png
+  - url: media/meeting.png
 ---
 ## Test
