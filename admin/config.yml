@@ -37,7 +37,7 @@ collections:
         name: pages
         required: false
         widget: list
-        field:
+        fields:
           - label: "Page"
             name: "url"
             widget: "relation"
