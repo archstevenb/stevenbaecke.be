@@ -17,7 +17,6 @@ collections:
       - {label: "Title", name: "title", widget: "string" }
       - {label: "Url", name: "permalink", widget: "string" }
       - {label: "Layout", name: "layout", widget: "hidden", required: true, default: "page" }
-      - {label: "Body", name: "body", widget: "markdown" }
       - label: "Meta"
         name: meta
         required: false
@@ -25,22 +24,14 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string", required: false }
           - {label: "Description", name: "description", widget: "text"}
-          - label: "Menu"
-            name: menu
-            required: false
-            widget: object
-            fields:
-              - {label: "Title", name: "title", widget: "string", required: false }
-              - {label: "Description", name: "description", widget: "text"}
-              - {label: "Url", name: "url", widget: "string" }
+      - {label: "Body", name: "body", widget: "markdown" }
       - label: "Images"
         name: images
         required: false
         widget: list
         fields:
           - {label: "Title", name: "title", widget: "string", required: false }
-          - {label: "Image", name: "image", widget: "image", required: false }
-          - {label: "Url", name: "url", widget: "string" }
+          - {label: "Image", name: "url", widget: "image", required: false }
           
   - name: "posts"
     label: "Posts"
@@ -50,10 +41,24 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string" }
+      - {label: "Subtitle", name: "subtitle", widget: "string" }
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm"}
-      - {label: "Layout", name: "layout", widget: "hidden", required: true, default: "default" }
-      - {label: "Image", name: "image", widget: "image", required: false }
+      - {label: "Layout", name: "layout", widget: "hidden", required: true, default: "post" }
+      - label: "Meta"
+        name: meta
+        required: false
+        widget: object
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false }
+          - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown" }
+      - label: "Images"
+        name: images
+        required: false
+        widget: list
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false }
+          - {label: "Image", name: "url", widget: "image", required: false }
       - {label: "Published", name: "published", widget: "boolean", default: true}
 
   - name: "forms"
@@ -101,14 +106,13 @@ collections:
             widget: list
             fields:
               - {label: "Title", name: "title", widget: "string"}
-              - name: "link"
-                label: "Link"
+              - name: "url"
+                label: "Url"
                 required: false
                 widget: relation
                 collection: pages
                 searchFields: [title, permalink]
                 valueField: permalink
-              - {label: "Description", name: "description", widget: "text"}
       - name: "info"
         label: "Info"
         file: "_data/info.yml"
