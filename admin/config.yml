@@ -30,8 +30,9 @@ collections:
         required: false
         widget: list
         fields:
-          - {label: "Title", name: "title", widget: "string", required: false }
           - {label: "Image", name: "url", widget: "image", required: false }
+          - {label: "Alt", name: "alt", widget: "string", required: false }
+          - {label: "Caption", name: "caption", widget: "string", required: false }
           
   - name: "posts"
     label: "Posts"
@@ -57,8 +58,9 @@ collections:
         required: false
         widget: list
         fields:
-          - {label: "Title", name: "title", widget: "string", required: false }
           - {label: "Image", name: "url", widget: "image", required: false }
+          - {label: "Alt", name: "alt", widget: "string", required: false }
+          - {label: "Caption", name: "caption", widget: "string", required: false }
       - {label: "Published", name: "published", widget: "boolean", default: true}
 
   - name: "forms"
