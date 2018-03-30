@@ -130,7 +130,7 @@ assets:
     url: null
   sources:
     - _assets
-    - media
+    - _assets/media
   plugins:
     css: { autoprefixer: {}}
     img: { optim: {}}
