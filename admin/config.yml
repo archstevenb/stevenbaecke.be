@@ -35,11 +35,8 @@ collections:
           - {label: "Caption", name: "caption", widget: "string", required: false }
       - label: "Pages"
         name: pages
-        widget: "relation"
-        collection: "pages"
-        searchFields: ["title", "permalink"]
-        valueField: "permalink"
-
+        required: false
+        widget: list
   - name: "posts"
     label: "Projects"
     label_singular: "project"
