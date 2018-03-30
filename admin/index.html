@@ -18,26 +18,7 @@
   
   <!-- Include the script that builds the page and powers Netlify CMS -->
   <script src="https://unpkg.com/netlify-cms@^1.0.0/dist/cms.js"></script>
-  
   <script>
-    
-    var PagePreview = createClass({
-      render: function() {
-        var entry = this.props.entry;
-        var image = entry.getIn(['data', 'image']);
-        var bg = this.props.getAsset(image);
-      
-        return h('div', {},
-          h('picture', {className: 'banner', style: {'background-image': 'url(' + bg.toString() + ')'}}),
-          h('h1', {}, entry.getIn(['data', 'title'])),
-          h('article', {}, this.props.widgetFor('body'))
-        );
-      }
-    });
-    
-    
-    CMS.registerPreviewTemplate("pages", PagePreview);
-    
     // include preview styles
     CMS.registerPreviewStyle("/admin/css/preview.css");
   </script>

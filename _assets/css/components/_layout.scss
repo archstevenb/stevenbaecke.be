@@ -101,6 +101,11 @@ $nav-height-large: em(110);
         flex: 1 100%;
     }
 
+    h2 {
+        margin: $spacing-huge * 2 0 $spacing-medium;
+        font-size: $font-size-large;
+        letter-spacing: .2em;
+    }
 }
 
 // page small
