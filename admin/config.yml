@@ -37,9 +37,7 @@ collections:
         name: pages
         required: false
         widget: list
-        fields:
-          - {label: "Url", name: "url", widget: "string", required: false }
- 
+
   - name: "posts"
     label: "Projects"
     label_singular: "project"
