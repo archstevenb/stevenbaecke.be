@@ -5,6 +5,7 @@ backend:
 
 
 media_folder: "/_assets/media/"
+public_folder: "media/"
 
 
 collections:
