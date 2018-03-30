@@ -34,11 +34,11 @@ collections:
           - {label: "Alt", name: "alt", widget: "string", required: false }
           - {label: "Caption", name: "caption", widget: "string", required: false }
       - label: "Pages"
-        name: pages
-        required: false
-        widget: list
-        field:
-          - {label: "Url", name: "url", widget: "string", required: false }
+        name: "pages"
+        widget: "relation"
+        collection: "pages"
+        searchFields: ["title"]
+        valueField: "permalink"
 
   - name: "posts"
     label: "Projects"
