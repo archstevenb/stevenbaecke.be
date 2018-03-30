@@ -17,16 +17,29 @@ collections:
       - {label: "Title", name: "title", widget: "string" }
       - {label: "Url", name: "permalink", widget: "string" }
       - {label: "Layout", name: "layout", widget: "hidden", required: true, default: "page" }
-      - {label: "Banner", name: "image", widget: "image", required: false }
       - {label: "Body", name: "body", widget: "markdown" }
-      - label: "Cards"
-        name: cards
+      - label: "Meta"
+        name: meta
         required: false
         widget: object
         fields:
           - {label: "Title", name: "title", widget: "string", required: false }
+          - {label: "Description", name: "description", widget: "text"}
+          - label: "Menu"
+            name: menu
+            required: false
+            widget: object
+            fields:
+              - {label: "Title", name: "title", widget: "string", required: false }
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Url", name: "url", widget: "string" }
+      - label: "Images"
+        name: images
+        required: false
+        widget: list
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false }
           - {label: "Image", name: "image", widget: "image", required: false }
-          - {label: "Description", name: "description", widget: "markdown", required: false }
           - {label: "Url", name: "url", widget: "string" }
           
   - name: "posts"
