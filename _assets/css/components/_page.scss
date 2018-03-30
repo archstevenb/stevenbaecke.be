@@ -14,11 +14,10 @@
         }
 
         aside {
-            display: flex;
             max-width: em(420);
 
             & > figure {
-                flex: 1;
+                flex: 1 100%;
             }
 
             & + .content {
@@ -27,7 +26,7 @@
         }
 
         figure {
-            margin: $spacing-medium 0;
+            margin-bottom: $spacing-medium;
         }
 
         picture:before {
@@ -37,6 +36,17 @@
 
     }
 
+    aside.gallery {
+        max-width: 100%;
+        order: 9;
+
+        figure {
+            flex-basis: 33%;
+            max-width: 50%;
+            min-width: em(180);
+            margin: 0;
+        }
+    }
 }
 
 
@@ -58,4 +68,28 @@
 
     }
 
+    aside.gallery {
+        flex-basis: 100%;
+
+        & + div {
+            flex-basis: 100%;
+            padding-left: 0;
+        }
+
+        figure {
+            flex-basis: 25%;
+            max-width: 25%;
+        }
+    }
+}
+
+@mixin page-large() {
+
+    aside.gallery {
+
+        figure {
+            flex-basis: 20%;
+            max-width: 20%;
+        }
+    }
 }
