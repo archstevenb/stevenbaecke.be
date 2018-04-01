@@ -26,14 +26,16 @@ een uitvoeringsplan opgemaakt.
 De bouwheer voert de werken uit en de architect doet **nazicht en controle**.
 
 
-[//]: # links
 ## Interessante links
-- [www.energiesparen.be/bouwen-en-verbouwen](http://www.energiesparen.be/bouwen-en-verbouwen){: target="blanck" }
-- [www.omgevingsloketvlaanderen.be](http://www.omgevingsloketvlaanderen.be){: target="blanck" }
-- [www.premiezoeker.be](http://www.premiezoeker.be){: target="blanck" }
-{: class="links"}
 
-<div class="buttons" markdown="1">
+<ul class="links">
+<li><a href="http://www.energiesparen.be/bouwen-en-verbouwen" target="_blank">www.energiesparen.be/bouwen-en-verbouwen</a></li>
+<li><a href="http://www.omgevingsloketvlaanderen.be" target="_blank">www.omgevingsloketvlaanderen.be</a></li>
+<li><a href="http://www.premiezoeker.be" target="_blank">www.premiezoeker.be</a></li>
+</ul>
+
+
+<div class="buttons">
 <a href="/#contact" class="button">Afspraak maken</a>
 <a href="/#contact" class="button">Stel een vraag</a>
 </div>
