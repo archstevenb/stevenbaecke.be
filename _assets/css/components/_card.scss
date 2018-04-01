@@ -27,6 +27,7 @@
                 height: 100%;
                 padding-top: 100%;
             }
+
         }
 
         img {
@@ -42,6 +43,14 @@
         }
     }
 
+    figure.wide {
+        flex-basis: 100%;
+
+        picture:before {
+            padding-top: 50%;
+        }
+     }
+
 }
 
 
@@ -54,6 +63,10 @@
 
         div {
             order: 0;
+        }
+
+        figure.wide {
+            flex-basis: 66%;
         }
     }
 

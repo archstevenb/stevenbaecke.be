@@ -2,7 +2,7 @@
 
     <h1>Projecten</h1>
 
-    {% for post in site.posts %}
+    {% for post in site.posts reversed %}
     <article class="card">
 
         <div>
@@ -11,9 +11,11 @@
         </div>
 
         {% if post.images %}
+            {% assign c = post.images.size %}
             {% for image in post.images %}
-            <figure>
-                {% include components/image.html image=image.url alt=image.alt style="card" %}
+            <figure{% if c == 1 %} class="wide"{% endif %}>
+                {% capture style %}{% if c == 1 %}card-wide{% else %}card{% endif %}{% endcapture%}
+                {% include components/image.html image=image.url alt=image.alt style=style %}
                 {% if image.caption %}
                     <figcaption>
                         {{ image.caption }}

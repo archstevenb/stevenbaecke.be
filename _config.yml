@@ -88,13 +88,16 @@ image_styles:
     - media: 'max-width: 720px'
       width: 640
       height: 640
-  sidebar:
-    width: 420
-    height: 320
+  card-wide:
+    width: 1100
+    height: 550
     sizes:
-    - media: 'max-width: 960px'
-      width: 960
+    - media: 'max-width: 520px'
+      width: 800
       height: 400
+    - media: 'max-width: 720px'
+      width: 1280
+      height: 640
 
 # liquid compress html
 compress_html:
