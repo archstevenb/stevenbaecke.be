@@ -47,7 +47,7 @@ collections:
             searchFields: ["title", "permalink"]
             valueField: "permalink"
       - label: "Widgets"
-        name: meta
+        name: widgets
         required: false
         widget: object
         fields:
