@@ -1,6 +1,12 @@
 {% assign form = site.forms | where:"name", include.form | first %}
 
-<form class="block" action="{{ form.success }}" name="contact" netlify netlify-honeypot="gotcha">
+<form class="block" action="/{{ page.url }}#{{ form.name }}-success" name="contact" netlify netlify-honeypot="gotcha">
+  
+  <div id="{{ form.name }}-success" class="hidden">
+    <strong>Bericht verzonden</strong>
+    <p>{{ form.success }}</p>
+  </div>
+  
   <h3 class="hidden">{{ form.title }}</h3>
   <input type="text" name="gotcha" style="display:none" />
 
