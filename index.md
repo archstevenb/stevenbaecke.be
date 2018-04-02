@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Frontpage
 permalink: /
 layout: frontpage
 meta:
@@ -13,3 +13,4 @@ pages:
   - url: /projecten
   - url: /contact
 ---
+
