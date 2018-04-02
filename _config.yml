@@ -115,8 +115,8 @@ assets:
   source_maps: false
   destination: "/assets"
   compression: true
-  digest: false
-  gzip: false
+  digest: true
+  gzip: true
   defaults:
     js: { integrity: false }
     css: { integrity: false }
