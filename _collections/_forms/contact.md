@@ -1,7 +1,7 @@
 ---
 title: Contactformulier
 name: contact
-success: Bericht werd succesvol verzonden
+success: Uw bericht werd succesvol verzonden.
 fields:
   - label: Kies een onderwerp
     name: onderwerp
