@@ -26,7 +26,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string", required: false }
           - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown", required: false }
       - label: "Images"
         name: images
         required: false
@@ -35,6 +34,7 @@ collections:
           - {label: "Image", name: "url", widget: "image", required: false }
           - {label: "Alt", name: "alt", widget: "string", required: false }
           - {label: "Caption", name: "caption", widget: "string", required: false }
+      - {label: "Body", name: "body", widget: "markdown", required: false }
       - label: "Links"
         name: links
         required: false
@@ -74,7 +74,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string", required: false }
           - {label: "Description", name: "description", widget: "text"}
-      - {label: "Body", name: "body", widget: "markdown" }
       - label: "Images"
         name: images
         required: false
@@ -83,6 +82,7 @@ collections:
           - {label: "Image", name: "url", widget: "image", required: false }
           - {label: "Alt", name: "alt", widget: "string", required: false }
           - {label: "Caption", name: "caption", widget: "string", required: false }
+      - {label: "Body", name: "body", widget: "markdown" }
       - {label: "Published", name: "published", widget: "boolean", default: true}
 
   - name: "forms"
