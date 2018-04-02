@@ -27,8 +27,13 @@
     }
     
     .message {
-        background-color: $color-green;
-        padding: $spacing-small;
+        padding: $spacing-small $spacing-medium;
+        background: $color-black;
+        color: $color-white;
+        
+        p {
+            margin: 0;
+        }
     }
 
 }
