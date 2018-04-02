@@ -46,6 +46,12 @@ collections:
             collection: "pages"
             searchFields: ["title", "permalink"]
             valueField: "permalink"
+      - label: "Widgets"
+        name: meta
+        required: false
+        widget: object
+        fields:
+          - {label: "Map", name: "map", widget: "string", required: false }
 
   - name: "posts"
     label: "Projects"
