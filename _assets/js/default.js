@@ -37,11 +37,12 @@ for (i = 0; i < contactButtons.length; i++) {
 
 
 // Form success message
-var hash = location.hash;
-if(hash) {
-    var pane = document.querySelector(hash);
-    if(pane && pane.classList.contains('hidden')) {
-        document.querySelector(hash).classList.remove('hidden');
+var url = new URL(window.location.href);
+var success = url.searchParams.get("success");
+var message = document.querySelector(".success");
+if(success && message) {
+    if(message.classList.contains('hidden')) {
+        message.classList.remove('hidden');
     }
 }
 
