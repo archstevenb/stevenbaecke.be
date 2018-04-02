@@ -3,8 +3,8 @@ title: Contact
 permalink: /contact
 layout: page
 meta:
-  description: Architect Steven Baecke staat in voor kleine en grote projecten.
-  title: Contacteer architect Steven Baecke
+  map: >-
+    https://www.google.com/maps/embed/v1/place?q=STOEPESTRAAT+18+-+9960+ASSENEDE&key=AIzaSyBQhdzM-IjtnsSoFz_CfbBCqcBhd5nQN9c
 ---
 # Contact
 
