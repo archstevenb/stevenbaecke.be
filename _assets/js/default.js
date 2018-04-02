@@ -36,7 +36,14 @@ for (i = 0; i < contactButtons.length; i++) {
 }
 
 
-
+// Form success message
+var hash = location.hash;
+if(hash) {
+    var pane = document.querySelector(hash);
+    if(pane && pane.classList.contains('hidden')) {
+        document.querySelector(hash).classList.remove('hidden');
+    }
+}
 
 
 
