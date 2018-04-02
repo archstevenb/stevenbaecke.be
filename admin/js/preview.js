@@ -19,8 +19,9 @@ var PagePreview = createClass({
 
     // figures
     if (images != null) {
+        var figureClass = layout == "card" && images.size == 1 ? 'wide' : 'no';
         figures = images.map(function(item, index) {
-            return h('figure', {},
+            return h('figure', {className: figureClass},
                 h('picture', {className: "preview-img", style: {'background-image': 'url("' + item.get('url') + '")'}}, "")
             );
         });
