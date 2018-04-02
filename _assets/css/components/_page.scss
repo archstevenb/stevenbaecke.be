@@ -64,6 +64,10 @@
 
         aside {
             flex-basis: 35%;
+
+            figure {
+                margin: $spacing-medium 0;
+            }
         }
 
     }
