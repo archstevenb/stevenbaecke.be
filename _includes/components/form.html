@@ -1,7 +1,6 @@
 {% assign form = site.forms | where:"name", include.form | first %}
 
-<div id="{{ form.name }}-success" class="hidden">
-  <strong>Bericht verzonden</strong>
+<div id="{{ form.name }}-success" class="hidden message">
   <p>{{ form.success }}</p>
 </div>
 
