@@ -2,7 +2,6 @@
 
     .map {
         padding-top: 0;
-        margin-top: -$nav-height;
         order: 99;
 
         iframe {
@@ -27,7 +26,6 @@
 @mixin map-large() {
 
     .map {
-        margin-top: 0;
         order: initial;
         margin-bottom: 0;
         flex-basis: 50%;
