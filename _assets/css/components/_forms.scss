@@ -25,5 +25,10 @@
     form div:last-child {
         margin-top: $spacing-huge;
     }
+    
+    .message {
+        background-color: $color-green;
+        padding: $spacing-small;
+    }
 
 }
