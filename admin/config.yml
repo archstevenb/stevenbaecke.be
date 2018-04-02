@@ -92,13 +92,7 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
-      - name: "success"
-        label: "Success link"
-        required: false
-        widget: relation
-        collection: pages
-        searchFields: [title, permalink]
-        valueField: permalink
+      - {label: "Success message", name: "success", widget: "text"}
       - label: "Fields"
         name: fields
         widget: "list"
