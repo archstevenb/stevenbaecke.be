@@ -17,7 +17,7 @@
             background-color: lighten($color-silver, 10);
             text-align: center;
 
-            & > * {
+            * {
                 margin-top: 0
             }
         }
