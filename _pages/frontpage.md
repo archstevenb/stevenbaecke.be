@@ -3,13 +3,15 @@ title: Home
 permalink: /
 layout: frontpage
 meta:
-  title: Een titel met zoveel mogelijk kernwoorden
-  description: Een kort en bondige omschrijving met zoveel mogelijk kernwoorden zoals architect, nieuwbouw, verbouwingen, renovaties...
+  description: |-
+    Steven heeft een masterdiploma Architectuur behaald aan
+    de faculteit Architectuur Gent van de KU Leuven.
+  title: Architect Steven Baecke staat in voor kleine en grote projecten
 images:
-  - url: /media/plan.jpg
-    alt: Plan
-  - url: /media/lijntekening.png
-    alt: Lijntekening
+  - alt: Plan
+    url: /media/plan.jpg
+  - alt: Lijntekening
+    url: /media/lijntekening.png
 pages:
   - url: /informatie
   - url: /projecten
