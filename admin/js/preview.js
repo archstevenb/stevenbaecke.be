@@ -6,11 +6,15 @@ var PagePreview = createClass({
     var layout = entry.getIn(['data', 'layout']);
     var body = this.props.widgetFor('body');
     var images = entry.getIn(['data', 'images']);
+    var links = entry.getIn(['data', 'links']);
+    var buttons = entry.getIn(['data', 'buttons']);
     var className = layout;
 
     // partials
     var aside = "";
     var figures = "";
+    var pLinks = "";
+    var pButtons = "";
     var content = h('div', {}, body);
 
     // figures
@@ -22,6 +26,24 @@ var PagePreview = createClass({
         });
     }
 
+    // links
+    if (links != null) {
+        cLinks  = links.map(function(item, index) {
+            return h('li', {},
+                h('a', {}, item.get('title'))
+            )
+        });
+        pLinks = h('ul', {className: "unstyled links"}, cLinks);
+    }
+
+    // links
+    if (buttons != null) {
+        cButtons  = buttons.map(function(item, index) {
+            return  h('a', {className: "button"}, item.get('title'))
+        });
+        pButtons = h('div', {className: "buttons"}, cButtons);
+    }
+
     // aside
     if (layout == 'page') {
         if (images) {
@@ -30,7 +52,7 @@ var PagePreview = createClass({
     }
 
     // card
-    if (layout == "frontpage" || layout == "post") {
+    if (layout == "card" || layout == "post") {
         className = "card";
     }
 
@@ -41,8 +63,11 @@ var PagePreview = createClass({
 
         content = h('div', {},
             h('h1', {}, h('strong', {}, entry.getIn(['data', 'subtitle'])), entry.getIn(['data', 'title'])),
-            body);
+            body, pLinks, pButtons);
 
+    }
+    else {
+       content = h('div', {}, body, pLinks, pButtons);
     }
 
     // preview
