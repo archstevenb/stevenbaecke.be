@@ -7,3 +7,22 @@
 {% endcapture %}
 
 {{ css | replace: '<style rel="stylesheet" type="text/css">', '' | replace: '</style>', '' }}
+
+.preview-block {
+    padding: .4em .5em;
+    border: 1px dashed grey;
+}
+
+article.page aside figure {
+    margin-top: 1.5em;
+}
+
+picture.preview-img {
+    background-position: center center;
+    background-size: cover;
+}
+
+picture.preview-img:before {
+    position: relative;
+    z-index: -1;
+}

@@ -1,7 +1,7 @@
 @mixin card() {
     .card {
 
-        div {
+        & > div {
             background-color: $color-black;
             color: $color-white;
             flex: 1 100%;
