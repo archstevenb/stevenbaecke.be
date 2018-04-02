@@ -10,6 +10,18 @@ meta:
 images:
   - alt: Vrijblijvende afspraak
     url: /media/meeting.png
+links:
+  - url: http://www.energiesparen.be/bouwen-en-verbouwen
+    title: www.energiesparen.be/bouwen-en-verbouwen
+  - url: http://www.omgevingsloketvlaanderen.be
+    title: www.omgevingsloketvlaanderen.be
+  - url: http://www.premiezoeker.be
+    title: www.premiezoeker.be
+buttons:
+  - url: /#contact
+    title: Afspraak maken
+  - url: /#contact
+    title: Stel een vraag
 ---
 # Met een persoonlijke aanpak wordt de klant begeleidt in het bouwproces
 
@@ -30,14 +42,3 @@ De bouwheer voert de werken uit en de architect doet **nazicht en controle**.
 
 ## Interessante links
 
-<ul class="links">
-<li><a href="http://www.energiesparen.be/bouwen-en-verbouwen" target="_blank">www.energiesparen.be/bouwen-en-verbouwen</a></li>
-<li><a href="http://www.omgevingsloketvlaanderen.be" target="_blank">www.omgevingsloketvlaanderen.be</a></li>
-<li><a href="http://www.premiezoeker.be" target="_blank">www.premiezoeker.be</a></li>
-</ul>
-
-
-<div class="buttons">
-<a href="/#contact" class="button">Afspraak maken</a>
-<a href="/#contact" class="button">Stel een vraag</a>
-</div>

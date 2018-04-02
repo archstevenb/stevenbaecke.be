@@ -35,17 +35,20 @@ collections:
           - {label: "Image", name: "url", widget: "image", required: false }
           - {label: "Alt", name: "alt", widget: "string", required: false }
           - {label: "Caption", name: "caption", widget: "string", required: false }
-      - label: "Included pages"
-        name: pages
+      - label: "Links"
+        name: links
         required: false
         widget: list
         fields:
-          - label: "Page"
-            name: "url"
-            widget: "relation"
-            collection: "pages"
-            searchFields: ["title", "permalink"]
-            valueField: "permalink"
+          - {label: "Title", name: "title", widget: "string", required: false }
+          - {label: "Url", name: "url", widget: "image", required: false }
+      - label: "Buttons"
+        name: buttons
+        required: false
+        widget: list
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false }
+          - {label: "Url", name: "url", widget: "image", required: false }
       - label: "Widgets"
         name: widgets
         required: false
@@ -111,6 +114,31 @@ collections:
     editor:
       preview: false
     files:
+      - name: "Frontpage"
+        label: "Frontpage"
+        file: "index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string" }
+          - {label: "Url", name: "permalink", widget: "hidden", default: "/" }
+          - {label: "Layout", name: "layout", widget: "hidden", required: true, default: "frontpage" }
+          - label: "Meta"
+            name: meta
+            required: false
+            widget: object
+            fields:
+              - {label: "Title", name: "title", widget: "string", required: false }
+              - {label: "Description", name: "description", widget: "text"}
+          - label: "Pages"
+            name: pages
+            required: false
+            widget: list
+            fields:
+              - label: "Page"
+                name: "url"
+                widget: "relation"
+                collection: "pages"
+                searchFields: ["title", "permalink"]
+                valueField: "permalink"
       - name: "menu"
         label: "Menu"
         file: "_data/menu.yml"

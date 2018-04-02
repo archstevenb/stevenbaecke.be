@@ -26,6 +26,15 @@
 
     <div>
         {{ item.content | markdownify | replace: "\", "<br />" }}
+
+        {% if item.links %}
+        {% include components/links.html items=item.links class="unstyled links" %}
+        {% endif %}
+        
+        {% if item.buttons %}
+        {% include components/buttons.html items=item.buttons class="buttons" %}
+        {% endif %}
+
     </div>
 
 </article>

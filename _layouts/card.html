@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="card" id="{{ page.permalink | slice: 1, page.permalink.size }}">
+
+    <div>
+        {{ content | replace: "\", "<br />" }}
+    </div>
+
+    {% if page.images %}
+        {% for image in page.images %}
+        <figure>
+            {% include components/image.html image=image.url alt=image.alt style="card" %}
+            {% if image.caption %}
+                <figcaption>
+                    {{ image.caption }}
+                </figcaption>
+            {% endif %}
+        </figure>
+        {% endfor %}
+    {% endif %}
+
+</article>

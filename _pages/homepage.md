@@ -1,7 +1,7 @@
 ---
 title: Home
-permalink: /
-layout: frontpage
+permalink: /homepage
+layout: card
 meta:
   description: |-
     Steven heeft een masterdiploma Architectuur behaald aan
@@ -12,10 +12,6 @@ images:
     url: /media/plan.jpg
   - alt: Lijntekening
     url: /media/lijntekening.png
-pages:
-  - url: /informatie
-  - url: /projecten
-  - url: /contact
 ---
 # Architect Steven Baecke staat in voor kleine en grote projecten.
 
