@@ -3,11 +3,13 @@ title: Informatie
 permalink: /informatie
 layout: page
 meta:
-  title: Een titel met zoveel mogelijk kernwoorden
-  description: Een kort en bondige omschrijving met zoveel mogelijk kernwoorden zoals architect, nieuwbouw, verbouwingen, renovaties...
+  description: >-
+    De bestaande toestand, de stedenbouwkundige eisen, de visie en de
+    haalbaarheid worden besproken.
+  title: 'Informatie, alles over architect Steven Baecke'
 images:
-  - url: /media/meeting.png
-    alt: Vrijblijvende afspraak
+  - alt: Vrijblijvende afspraak
+    url: /media/meeting.png
 ---
 # Met een persoonlijke aanpak wordt de klant begeleidt in het bouwproces
 
