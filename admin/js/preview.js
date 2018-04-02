@@ -9,8 +9,10 @@ var PagePreview = createClass({
     var links = entry.getIn(['data', 'links']);
     var buttons = entry.getIn(['data', 'buttons']);
     var className = layout;
+    var wrapper = "article";
 
     // partials
+    var title = "";
     var aside = "";
     var figures = "";
     var pLinks = "";
@@ -71,8 +73,17 @@ var PagePreview = createClass({
        content = h('div', {}, body, pLinks, pButtons);
     }
 
+
+    // projects
+    if (layout == "projects") {
+        className = "projects";
+        wrapper = "section";
+        title= h('h1', {}, entry.getIn(['data', 'title']));
+    }
+
     // preview
-    return h('article', {"className": className},
+    return h(wrapper, {"className": className},
+      title,
       aside,
       content,
       figures,

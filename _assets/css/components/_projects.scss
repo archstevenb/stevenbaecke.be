@@ -12,6 +12,16 @@
             font-weight: 300;
         }
 
+        & > div {
+            padding: 0 $spacing-huge $spacing-small;
+            background-color: lighten($color-silver, 10);
+            text-align: center;
+
+            & > * {
+                margin-top: 0
+            }
+        }
+
         &:hover {
             .project {
                 opacity: 0.6;

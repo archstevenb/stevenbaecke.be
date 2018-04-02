@@ -41,6 +41,13 @@
         p {
             max-width: em(600);
         }
+
+        .button {
+            border-color: $color-white;
+            background-color: $color-black;
+            color: $color-white;
+        }
+
     }
 
     figure.wide {
