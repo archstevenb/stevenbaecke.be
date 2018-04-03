@@ -69,6 +69,7 @@ defaults:
       permalink: /blog/:year-:month-:day-:title:output_ext
       incremental: true
       og-type: blog
+      schema: BlogPosting
 
 # Image styles
 image_styles:
