@@ -8,33 +8,33 @@
     {% include head/og-tags.html %}
     <script type="application/ld+json">
         {
-            "@context": "http://schema.org",
-            "@type": "LocalBusiness",
-            "image": "{{ site.url }}/{% asset '{{ site.data.info.image | remove: "/media/" }}' @path magick:resize=1200^x1200^ magick:crop=1200x1200+0+0 magick:quality=75 magick:compress=jpeg %}",
-             "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "{{ site.data.info.street }} ",
-                "addressLocality": "{{ site.data.info.locality }}",
-                "postalCode":"{{ site.data.info.postal }}"
-             },
-             "description": "{{ site.data.info.description }}",
-             "name": "{{ site.data.info.name }}",
-             "telephone": "{{ site.data.info.phone }}{{ site.data.info.mobile }}",
-             "email": "{{ site.data.info.email }}",
-            "url": "{{ site.url }}"
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@type":"{{ page.schema }}",
-            "headline":"{{ page.meta.title }}",
-            "url":"{{ page.url }}",
-            "author":{
-                "@type":"Person",
-                "name":"{{ site.data.info.name }}"
+            {
+                "@context": "http://schema.org",
+                "@type": "LocalBusiness",
+                "image": "{{ site.url }}/{% asset '{{ site.data.info.image | remove: "/media/" }}' @path magick:resize=1200^x1200^ magick:crop=1200x1200+0+0 magick:quality=75 magick:compress=jpeg %}",
+                 "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "{{ site.data.info.street }} ",
+                    "addressLocality": "{{ site.data.info.locality }}",
+                    "postalCode":"{{ site.data.info.postal }}"
+                 },
+                 "description": "{{ site.data.info.description }}",
+                 "name": "{{ site.data.info.name }}",
+                 "telephone": "{{ site.data.info.phone }}{{ site.data.info.mobile }}",
+                 "email": "{{ site.data.info.email }}",
+                "url": "{{ site.url }}"
             },
-            "description":"{{ page.meta.description }}",
-            "@context":"http://schema.org"
+            {
+                "@type":"{{ page.schema }}",
+                "headline":"{{ page.meta.title }}",
+                "url":"{{ page.url }}",
+                "author":{
+                    "@type":"Person",
+                    "name":"{{ site.data.info.name }}"
+                },
+                "description":"{{ page.meta.description }}",
+                "@context":"http://schema.org"
+            }
         }
     </script>
     {% asset css/critical @inline !type %}
