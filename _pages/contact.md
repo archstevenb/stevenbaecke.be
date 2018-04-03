@@ -4,8 +4,8 @@ permalink: /contact
 layout: page
 meta:
   description: >-
-    Contacteer mij voor een vrijblijvende afspraak, meer in formatie of andere
-    zaken.
+    Contacteer Steven Baecke voor een vrijblijvende afspraak, meer in formatie
+    of andere zaken.
   title: Contacteer architect Steven Baecke
 widgets:
   map: >-
