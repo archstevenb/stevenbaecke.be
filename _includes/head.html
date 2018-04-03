@@ -1,0 +1,23 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.meta.title }}</title>
+    <meta name="description" content="{{ page.meta.description }}">
+    {% include_cached head/favicons.html %}
+    {% include head/og-tags.html %}
+    <script type="application/ld+json">
+        {
+            "@type": {{ page.schema }},
+            "headline": {{ page.meta.title }},
+            "url": {{ page.url }},
+            "author":{
+                "@type":"Person",
+                "name": {{ site.data.info.name }}
+            },
+            "description": {{ page.meta.description }},
+            "@context":"http://schema.org"
+        }
+    </script>
+    {% asset css/critical @inline !type %}
+</head>

@@ -1,15 +1,16 @@
 # Site settings
 title: Architect Steven Baecke
 email: info@stevenbaecke.be
-description: Public website
+description: Architect Steven Baecke
 baseurl: ""
 url: "https://stevenbaecke.be"
 lang: "nl"
 github_username: "archstevenb"
 repository: "archstevenb/stevenbaecke.be"
-
-# theme settings
 remote_theme: bert-bruggeman/base-jekyll-theme
+
+
+# favicon settings
 favicon-theme-color: #ffffff
 
 # Build settings
@@ -55,6 +56,12 @@ defaults:
       type: pages
     values:
       og-type: article
+      schema: "WebSite"
+  - scope:
+      type: pages
+      path: _pages
+    values:
+      schema: "WebPage"
   - scope:
       type: posts
     values:
