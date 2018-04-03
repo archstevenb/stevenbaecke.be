@@ -24,7 +24,7 @@
 
         {% if info.email %}<span><a class="email" href="mailto:{{ info.email | encode_email }}">{{ info.email }}</a></span>{% endif %}
         {% if info.tel %}<span class="tel">TEL: {{ info.tel }}</span>{% endif %}
-        {% if info.mobile %}<span class="mobile">TEL: {{ info.mobile }}</span>{% endif %}
+        {% if info.mobile %}<span class="tel mobile">TEL: {{ info.mobile }}</span>{% endif %}
 
     </div>
 
