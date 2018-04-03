@@ -8,14 +8,14 @@
     {% include head/og-tags.html %}
     <script type="application/ld+json">
         {
-            "@type": {{ page.schema }},
-            "headline": {{ page.meta.title }},
-            "url": {{ page.url }},
+            "@type":{{ page.schema }},
+            "headline":{{ page.meta.title }},
+            "url":{{ page.url }},
             "author":{
                 "@type":"Person",
-                "name": {{ site.data.info.name }}
+                "name":{{ site.data.info.name }}
             },
-            "description": {{ page.meta.description }},
+            "description":{{ page.meta.description }},
             "@context":"http://schema.org"
         }
     </script>
