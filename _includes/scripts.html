@@ -3,3 +3,12 @@
 {% if page.layout == "frontpage" %}
 {% asset js/frontpage async:true !type %}
 {% endif %}
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116825040-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116825040-1');
+</script>
