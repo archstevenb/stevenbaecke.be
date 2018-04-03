@@ -74,7 +74,7 @@
         
         div {
             order: 0;
-            padding: $spacing-huge $spacing-huge + $spacing-medium $spacing-large;
+            padding: $spacing-huge * 1.5 $spacing-huge * 1.5 $spacing-large;
         }
 
         figure.wide {
