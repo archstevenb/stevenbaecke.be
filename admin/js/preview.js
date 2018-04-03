@@ -21,7 +21,7 @@ var PagePreview = createClass({
 
     // figures
     if (images != null) {
-        var figureClass = (layout == "card" && images.size == "1") ? 'wide' : images.size;
+        var figureClass = (layout == "post" && images.size == 1) ? 'wide' : '';
         figures = images.map(function(item, index) {
             return h('figure', {className: figureClass},
                 h('picture', {className: "preview-img", style: {'background-image': 'url("' + item.get('url') + '")'}}, "")
@@ -39,7 +39,7 @@ var PagePreview = createClass({
         pLinks = h('ul', {className: "unstyled links"}, cLinks);
     }
 
-    // links
+    // buttons
     if (buttons != null) {
         cButtons  = buttons.map(function(item, index) {
             return  h('a', {className: "button"}, item.get('title'))
