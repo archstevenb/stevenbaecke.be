@@ -4,9 +4,13 @@ email: info@stevenbaecke.be
 description: Public website
 baseurl: ""
 url: "https://stevenbaecke.be"
+lang: "nl"
 github_username: "archstevenb"
 repository: "archstevenb/stevenbaecke.be"
+
+# theme settings
 remote_theme: bert-bruggeman/base-jekyll-theme
+favicon-theme-color: #ffffff
 
 # Build settings
 markdown: kramdown
@@ -115,7 +119,7 @@ assets:
   source_maps: false
   destination: "/assets"
   compression: true
-  digest: true
+  digest: false
   gzip: true
   defaults:
     js: { integrity: false }
@@ -133,6 +137,7 @@ assets:
     url: null
   sources:
     - _assets
+    - _assets/favicons
     - media
   plugins:
     css: { autoprefixer: {}}
