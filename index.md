@@ -9,8 +9,8 @@ meta:
   title: Architect Steven Baecke staat in voor kleine en grote projecten.
 pages:
   - url: /homepage
-  - url: /projecten
   - url: /informatie
+  - url: /projecten
   - url: /contact
 ---
 
