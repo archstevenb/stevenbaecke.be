@@ -160,11 +160,13 @@ collections:
         label: "Info"
         file: "_data/info.yml"
         fields:
-          - {label: "Title", name: "title", widget: "string", required: false }
-          - {label: "Name", name: "name", widget: "string", required: false }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Name", name: "name", widget: "string"}
           - {label: "Street", name: "street", widget: "string", required: false }
           - {label: "Postal", name: "postal", widget: "string", required: false }
           - {label: "Locality", name: "locality", widget: "string", required: false }
           - {label: "Phone", name: "tel", widget: "string", required: false }
           - {label: "Mobile", name: "mobile", widget: "string", required: false }
-          - {label: "Email", name: "email", widget: "string", required: false }
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+
