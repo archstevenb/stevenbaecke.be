@@ -22,6 +22,10 @@ Stoepestraat 18 - 9960 Assenede \
 info@stevenbaecke.be \
 0472 570 162
 
+BTW BE 0638 859 024
+
+Toezichthoudende autoriteit: Orde van Architecten
+
 ## Stuur mij een bericht
 
 {% include components/form.html form="contact" %}
