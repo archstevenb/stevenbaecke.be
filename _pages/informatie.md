@@ -6,22 +6,24 @@ meta:
   description: >-
     De bestaande toestand, de stedenbouwkundige eisen, de visie en de
     haalbaarheid worden besproken.
-  title: 'Informatie, alles over architect Steven Baecke'
+  title: >-
+    Informatie, alles over architect Steven Baecke en de samenwerking met de
+    bouwheer
 images:
   - alt: Vrijblijvende afspraak
     url: /media/meeting.png
 links:
-  - url: http://www.energiesparen.be/bouwen-en-verbouwen
-    title: www.energiesparen.be/bouwen-en-verbouwen
-  - url: http://www.omgevingsloketvlaanderen.be
-    title: www.omgevingsloketvlaanderen.be
-  - url: http://www.premiezoeker.be
-    title: www.premiezoeker.be
+  - title: www.energiesparen.be/bouwen-en-verbouwen
+    url: 'http://www.energiesparen.be/bouwen-en-verbouwen'
+  - title: www.omgevingsloketvlaanderen.be
+    url: 'http://www.omgevingsloketvlaanderen.be'
+  - title: www.premiezoeker.be
+    url: 'http://www.premiezoeker.be'
 buttons:
-  - url: /#contact
-    title: Afspraak maken
-  - url: /#contact
-    title: Stel een vraag
+  - title: Afspraak maken
+    url: '/#contact'
+  - title: Stel een vraag
+    url: '/#contact'
 ---
 # Met een persoonlijke aanpak wordt de klant begeleidt in het bouwproces
 
