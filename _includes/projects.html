@@ -6,7 +6,7 @@
     <article class="card project">
 
         <div>
-            <h1>{% if post.subtitle %}<strong>{{ post.subtitle }}</strong> {% endif %}{{ post.title }}</h1>
+            <h2>{% if post.subtitle %}<strong>{{ post.subtitle }}</strong> {% endif %}{{ post.title }}</h2>
             {{ post.content | markdownify | replace: "\", "<br />" }}
         </div>
 

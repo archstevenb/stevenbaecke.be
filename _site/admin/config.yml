@@ -1,0 +1,172 @@
+backend:
+  name: github
+  repo: "archstevenb/stevenbaecke.be"
+  branch: master
+
+
+media_folder: "/media/"
+public_folder: "media"
+
+
+collections:
+
+  - name: "pages"
+    label: "Pages"
+    label_singular: "page"
+    folder: "_pages"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string" }
+      - {label: "Url", name: "permalink", widget: "string" }
+      - {label: "Layout", name: "layout", widget: "select", options: ["page", "card", "projects"], default: "page" }
+      - label: "Meta"
+        name: meta
+        required: false
+        widget: object
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false }
+          - {label: "Description", name: "description", widget: "text"}
+      - label: "Images"
+        name: images
+        required: false
+        widget: list
+        fields:
+          - {label: "Image", name: "url", widget: "image", required: false }
+          - {label: "Alt", name: "alt", widget: "string", required: false }
+          - {label: "Caption", name: "caption", widget: "string", required: false }
+      - {label: "Body", name: "body", widget: "markdown", required: false }
+      - label: "Links"
+        name: links
+        required: false
+        widget: list
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false }
+          - {label: "Url", name: "url", widget: "string", required: false }
+      - label: "Buttons"
+        name: buttons
+        required: false
+        widget: list
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false }
+          - {label: "Url", name: "url", widget: "string", required: false }
+      - label: "Widgets"
+        name: widgets
+        required: false
+        widget: object
+        fields:
+          - {label: "Map", name: "map", widget: "string", required: false }
+
+  - name: "posts"
+    label: "Projects"
+    label_singular: "project"
+    folder: "_collections/_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string" }
+      - {label: "Subtitle", name: "subtitle", widget: "string" }
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm", default: "YYYY-MM-DD hh:mm"}
+      - {label: "Layout", name: "layout", widget: "hidden", required: true, default: "post" }
+      - label: "Meta"
+        name: meta
+        required: false
+        widget: object
+        fields:
+          - {label: "Title", name: "title", widget: "string", required: false }
+          - {label: "Description", name: "description", widget: "text"}
+      - label: "Images"
+        name: images
+        required: false
+        widget: list
+        fields:
+          - {label: "Image", name: "url", widget: "image", required: false }
+          - {label: "Alt", name: "alt", widget: "string", required: false }
+          - {label: "Caption", name: "caption", widget: "string", required: false }
+      - {label: "Body", name: "body", widget: "markdown", required: false }
+      - {label: "Published", name: "published", widget: "boolean", default: true}
+
+  - name: "forms"
+    label: "Forms"
+    label_singular: "form"
+    editor:
+      preview: false
+    folder: "_collections/_forms"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Success message", name: "success", widget: "text"}
+      - label: "Fields"
+        name: fields
+        widget: "list"
+        fields:
+          - {label: "Name", name: name, widget: string}
+          - {label: "Label", name: label, widget: string}
+          - {label: "Type", name: "type", widget: "select", options: ["text", "textarea", "email", "number", "file", "select"], default: "text" }
+          - {label: "Required", name: "required", widget: "boolean", default: false}
+          - {label: "Options", name: options, widget: "list", required: false}
+          
+
+  - name: "site"
+    label: "Website"
+    delete: false
+    create: false
+    editor:
+      preview: false
+    files:
+      - name: "Frontpage"
+        label: "Frontpage"
+        file: "index.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string" }
+          - {label: "Url", name: "permalink", widget: "hidden", default: "/" }
+          - {label: "Layout", name: "layout", widget: "hidden", required: true, default: "frontpage" }
+          - label: "Meta"
+            name: meta
+            required: false
+            widget: object
+            fields:
+              - {label: "Title", name: "title", widget: "string", required: false }
+              - {label: "Description", name: "description", widget: "text"}
+          - label: "Pages"
+            name: pages
+            required: false
+            widget: list
+            fields:
+              - label: "Page"
+                name: "url"
+                widget: "relation"
+                collection: "pages"
+                searchFields: ["title", "permalink"]
+                valueField: "permalink"
+      - name: "menu"
+        label: "Menu"
+        file: "_data/menu.yml"
+        fields:
+          - {label: "Title", name: "title", widget: "string" }
+          - name: links
+            label: Links
+            widget: list
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - name: "url"
+                label: "Url"
+                required: false
+                widget: relation
+                collection: pages
+                searchFields: [title, permalink]
+                valueField: permalink
+      - name: "info"
+        label: "Info"
+        file: "_data/info.yml"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Street", name: "street", widget: "string", required: false }
+          - {label: "Postal", name: "postal", widget: "string", required: false }
+          - {label: "Locality", name: "locality", widget: "string", required: false }
+          - {label: "Phone", name: "tel", widget: "string", required: false }
+          - {label: "Mobile", name: "mobile", widget: "string", required: false }
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+
