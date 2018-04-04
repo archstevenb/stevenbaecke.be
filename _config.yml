@@ -120,11 +120,11 @@ image_styles:
     height: 180
     sizes:
     - media: 'min-width: 1180px'
-      width: 900
-      height: 450
+      width: 880
+      height: 440
     - media: 'min-width: 1040px'
-      width: 1040
-      height: 520
+      width: 1000
+      height: 500
     - media: 'min-width: 960px'
       width: 960
       height: 480
