@@ -33,8 +33,8 @@ buttons:
 ---
 # Met een persoonlijke aanpak wordt de klant begeleidt in het bouwproces
 
-Een eerste **vrijblijvende afspraak** is gratis en kan u altijd aanvragen. Tijdens
-het gesprek worden de bestaande toestand, de **stedenbouwkundige eisen**,
+Een eerste **vrijblijvende afspraak** is gratis en kan u altijd aanvragen. \
+Tijdens het gesprek worden de bestaande toestand, de **stedenbouwkundige eisen**,
 de **visie** en de **haalbaarheid** besproken.
 
 De klant besluit om de architect aan te stellen en **aanvaard** de **overeenkomst**.
@@ -42,7 +42,8 @@ De klant besluit om de architect aan te stellen en **aanvaard** de **overeenkoms
 De bestaande toestand wordt opgemeten of de bestaande plannen worden doorgegeven. 
 
 Dan worden de **voorontwerpen** besproken en getoetst.
-Het definitief voorontwerp resulteert in een **bouwaanvraag**. Dit wordt digitaal ingediend.
+Het definitief voorontwerp resulteert in een **bouwaanvraag**. \
+Dit wordt digitaal ingediend.
 
 Er wordt een uitvoeringsplan opgemaakt. De bouwheer kan met dit plan aan de slag.
 
