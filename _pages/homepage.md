@@ -25,6 +25,6 @@ images:
 ---
 # Architect Steven Baecke staat in voor kleine en grote projecten.
 
-Elk project is een unieke **samenwerking** tussen **architect** en **bouwheer**, dat leidt tot een goed resultaat. De uitwisseling van een **visie** of een **idee** is de basis voor een ontwerp dat **architecturaal** en **stedenbouwkundig** een **meerwaarde** kan bieden. 
+Elk project is een unieke **samenwerking** tussen **architect** en **bouwheer. **Samen beogen we een goed resultaat. De uitwisseling van een **visie** of een **idee** is de basis voor een ontwerp dat **architecturaal** en **stedenbouwkundig** een **meerwaarde** kan bieden. 
 
 In 2015 werd **architect Steven Baecke** opgericht. Steven heeft een masterdiploma **Architectuur** behaald aan de faculteit Architectuur Gent van de KU Leuven. In het werkveld werd ervaring opgedaan bij Leen Vereecke en Tim Oost.
