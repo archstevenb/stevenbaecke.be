@@ -79,8 +79,8 @@ image_styles:
     height: 160
     sizes:
     - media: 'min-width: 1120px'
-      width: 560
-      height: 560
+      width: 520
+      height: 520
     - media: 'min-width: 960px'
       width: 480
       height: 480
@@ -101,8 +101,8 @@ image_styles:
     height: 320
     sizes:
     - media: 'min-width: 1120px'
-      width: 400
-      height: 400
+      width: 360
+      height: 360
     - media: 'min-width: 960px'
       width: 320
       height: 320
@@ -119,15 +119,15 @@ image_styles:
     width: 360
     height: 180
     sizes:
-    - media: 'min-width: 1280px'
+    - media: 'min-width: 1180px'
+      width: 900
+      height: 450
+    - media: 'min-width: 1040px'
+      width: 1040
+      height: 520
+    - media: 'min-width: 960px'
       width: 960
       height: 480
-    - media: 'min-width: 1120px'
-      width: 720
-      height: 360
-    - media: 'min-width: 960px'
-      width: 640
-      height: 320
     - media: 'min-width: 720px'
       width: 720
       height: 360
