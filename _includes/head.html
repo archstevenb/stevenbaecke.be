@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.meta.title }}</title>
     <meta name="description" content="{{ page.meta.description }}">
+    <link rel=”canonical” href=”{{ site.url }}{{ page.url }}” />.
     {% include_cached head/favicons.html %}
     {% include head/og-tags.html %}
     <script type="application/ld+json">
