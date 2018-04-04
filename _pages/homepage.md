@@ -3,8 +3,14 @@ title: Home
 permalink: /homepage
 layout: card
 meta:
-  description: |-
+  description: >-
+    Architect Steven Baecke doet nieuwbouw, renovatie, regularisatie,...
+
+    Projecten in Assenede, Oosteeklo, Boekhoute, Bassevelde, Ertvelde, Kluizen,
+    Wippelgem, Evergem, Zelzate, Wachtebeke, Lembeke
+
     Steven heeft een masterdiploma Architectuur behaald aan
+
     de faculteit Architectuur Gent van de KU Leuven.
   title: Architect Steven Baecke staat in voor kleine en grote projecten
 images:
