@@ -4,8 +4,8 @@ permalink: /contact
 layout: page
 meta:
   description: >-
-    Contacteer Steven Baecke voor een vrijblijvende afspraak, meer in formatie
-    of andere zaken.
+    Contacteer Steven Baecke voor een vrijblijvende afspraak, meer informatie of
+    andere zaken.
 
     Elk project is een unieke samenwerking tussen architect en bouwheer, dat
     leidt tot een goed resultaat. De uitwisseling van een visie of een idee is
