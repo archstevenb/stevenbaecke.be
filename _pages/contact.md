@@ -18,7 +18,7 @@ widgets:
 ---
 # Contact
 
-Stoepestraat 18 - 9960 Assenede (nabij Zelzate en Evergem)\
+Stoepestraat 18 - 9960 **Assenede **(nabij **Zelzate **en **Evergem**)\
 info@stevenbaecke.be \
 0472 570 162
 
