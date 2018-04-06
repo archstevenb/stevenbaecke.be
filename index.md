@@ -5,8 +5,12 @@ layout: frontpage
 meta:
   description: >-
     Architect Steven Baecke uit Assenede doet nieuwbouw, verbouwingen,
-    renovaties, regularisatie... Elk project is een unieke samenwerking tussen
-    architect en bouwheer, dat leidt tot een goed resultaat.
+    renovaties, regularisatie...
+
+    Elk project is een unieke samenwerking tussen architect en bouwheer, dat
+    leidt tot een goed resultaat. De uitwisseling van een visie of een idee is
+    de basis voor een ontwerp dat architecturaal en stedenbouwkundig een
+    meerwaarde kan bieden. 
   title: Architect Steven Baecke staat in voor kleine en grote projecten.
 pages:
   - url: /homepage
