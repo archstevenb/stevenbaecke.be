@@ -5,9 +5,8 @@ layout: frontpage
 meta:
   description: >-
     Architect Steven Baecke doet nieuwbouw, verbouwingen, renovaties,
-    regularisatie en stedenbouwkundige vergunningen. 
-
-    Meer info: Stel een vraag of maak een gratis vrijblijvend gesprek.
+    regularisatie en stedenbouwkundige vergunningen. Actief in Assenede,
+    Evergem, Zelzate etc.
 
     Elk project is een unieke samenwerking tussen architect en bouwheer, dat
     leidt tot een goed resultaat. De uitwisseling van een visie of een idee is
