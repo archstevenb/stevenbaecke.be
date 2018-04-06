@@ -6,7 +6,8 @@ meta:
   description: >-
     bestaande toestand, stedenbouwkundige eisen, de visie en de haalbaarheid,
     nazicht en controle door de Architect, vrijstelling, melding, vergunning,
-    architectuur, design, 
+    architectuur, design, ben woning, ecologisch, epb, bouwaanvraag, hemelwater,
+    omgevingsloket
      
   title: >-
     Informatie, alles over architect Steven Baecke en de samenwerking met de
