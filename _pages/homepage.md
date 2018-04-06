@@ -4,7 +4,8 @@ permalink: /homepage
 layout: card
 meta:
   description: >-
-    Architect Steven Baecke doet nieuwbouw, renovatie, regularisatie,...
+    Architect Steven Baecke doet nieuwbouw, renovatie, regularisatie en
+    stedenbouwkundige vergunningen.
 
     Elk project is een unieke samenwerking tussen architect en bouwheer, dat
     leidt tot een goed resultaat. De uitwisseling van een visie of een idee is
