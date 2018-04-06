@@ -13,10 +13,7 @@ meta:
     meerwaarde kan bieden. 
 
     Projecten in Assenede, Oosteeklo, Boekhoute, Bassevelde, Ertvelde, Kluizen,
-    Wippelgem, Evergem, Zelzate, Wachtebeke, Lembeke
-
-    Steven heeft een masterdiploma Architectuur behaald aan de faculteit
-    Architectuur Gent van de KU Leuven. 
+    Wippelgem, Evergem, Zelzate, Wachtebeke, Lembeke, Gent, Wervik
   title: Architect Steven Baecke staat in voor kleine en grote projecten
 images:
   - alt: Plan
