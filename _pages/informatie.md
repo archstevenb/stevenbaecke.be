@@ -4,14 +4,10 @@ permalink: /informatie
 layout: page
 meta:
   description: >-
-    De bestaande toestand, de stedenbouwkundige eisen, de visie en de
-    haalbaarheid worden besproken. Er gebeurt nazicht en controle door de
-    Architect.
-
-    Elk project is een unieke samenwerking tussen architect en bouwheer, dat
-    leidt tot een goed resultaat. De uitwisseling van een visie of een idee is
-    de basis voor een ontwerp dat architecturaal en stedenbouwkundig een
-    meerwaarde kan bieden. 
+    bestaande toestand, stedenbouwkundige eisen, de visie en de haalbaarheid,
+    nazicht en controle door de Architect, vrijstelling, melding, vergunning,
+    architectuur, design, 
+     
   title: >-
     Informatie, alles over architect Steven Baecke en de samenwerking met de
     bouwheer
@@ -35,7 +31,8 @@ buttons:
 
 Een eerste **vrijblijvende afspraak** is gratis en kan u altijd aanvragen. \
 Tijdens het gesprek worden de bestaande toestand, de **stedenbouwkundige eisen**,
-de **visie** en de **haalbaarheid** besproken.
+de **visie** en de **haalbaarheid** besproken.\
+De werken kunnen **vergunningsplichtig**, **meldingsplichtig** zijn of **vrijstelling** van beide.
 
 De klant besluit om de architect aan te stellen en **aanvaard** de **overeenkomst**.
 
