@@ -9,6 +9,6 @@ meta:
     milieu, ecologisch, afbraak, bouwen, verbouwen, aannemer . Actief in
     Assenede, Evergem, Zelzate, Boekhoute, Bassevelde, Oosteeklo, Wachtebeke,
     Ertvelde, Kluizen, Wippelgem, Wervik, Gent etc. 
-  title: 'Projecten: nieuwbouw, verbouwingen, renovaties, regularisatie,...'
+  title: 'Projecten: nieuwbouw, verbouwingen, renovaties, regularisatie,... '
 ---
 
