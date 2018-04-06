@@ -18,7 +18,7 @@ meta:
     Architectuur Gent van de KU Leuven. 
 
     ARCHITECT STEVEN BAECKE
-  title: ARCHITECT Steven Baecke staat in voor kleine en grote projecten
+  title: Architect Steven Baecke staat in voor kleine en grote projecten
 images:
   - alt: Plan
     url: /media/plan.jpg
