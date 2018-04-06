@@ -5,7 +5,7 @@ layout: frontpage
 meta:
   description: >-
     Architect Steven Baecke doet nieuwbouw, verbouwingen, renovaties,
-    regularisatie en stedenbouwkundige vergunningen.
+    regularisatie en stedenbouwkundige vergunningen. 
 
     Meer info: Stel een vraag of maak een gratis vrijblijvend gesprek.
 
