@@ -7,7 +7,7 @@ meta:
     Architect Steven Baecke uit Assenede doet nieuwbouw, verbouwingen,
     renovaties, regularisatie... Elk project is een unieke samenwerking tussen
     architect en bouwheer, dat leidt tot een goed resultaat.
-  title: ARCHITECT STEVEN BAECKE staat in voor kleine en grote projecten.
+  title: Architect Steven Baecke staat in voor kleine en grote projecten.
 pages:
   - url: /homepage
   - url: /informatie
