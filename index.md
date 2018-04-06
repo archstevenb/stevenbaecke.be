@@ -7,6 +7,8 @@ meta:
     Architect Steven Baecke doet nieuwbouw, verbouwingen, renovaties,
     regularisatie en stedenbouwkundige vergunningen.
 
+    Meer info: Stel een vraag of maak een gratis vrijblijvend gesprek.
+
     Elk project is een unieke samenwerking tussen architect en bouwheer, dat
     leidt tot een goed resultaat. De uitwisseling van een visie of een idee is
     de basis voor een ontwerp dat architecturaal en stedenbouwkundig een
