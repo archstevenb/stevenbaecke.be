@@ -15,8 +15,10 @@ meta:
     Wippelgem, Evergem, Zelzate, Wachtebeke, Lembeke
 
     Steven heeft een masterdiploma Architectuur behaald aan de faculteit
-    Architectuur Gent van de KU Leuven. ARCHITECT STEVEN BAECKE
-  title: Architect Steven Baecke staat in voor kleine en grote projecten
+    Architectuur Gent van de KU Leuven. 
+
+    ARCHITECT STEVEN BAECKE
+  title: ARCHITECT Steven Baecke staat in voor kleine en grote projecten
 images:
   - alt: Plan
     url: /media/plan.jpg
