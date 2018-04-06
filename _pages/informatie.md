@@ -43,8 +43,7 @@ Dan worden de **voorontwerpen** besproken en getoetst.
 Het definitief voorontwerp resulteert in een **bouwaanvraag**. \
 Dit wordt digitaal ingediend.
 
-Er wordt een uitvoeringsplan opgemaakt. De bouwheer kan met dit plan aan de slag.
-
+Er wordt een uitvoeringsplan opgemaakt. De bouwheer kan met dit plan aan de slag.\
 De bouwheer voert de werken uit en de architect doet **nazicht en controle**.
 
 ## Interessante links
