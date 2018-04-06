@@ -5,12 +5,8 @@ layout: page
 meta:
   description: >-
     Contacteer Steven Baecke voor een vrijblijvende afspraak, meer informatie of
-    andere zaken.
-
-    Elk project is een unieke samenwerking tussen architect en bouwheer, dat
-    leidt tot een goed resultaat. De uitwisseling van een visie of een idee is
-    de basis voor een ontwerp dat architecturaal en stedenbouwkundig een
-    meerwaarde kan bieden. 
+    andere zaken. Mail, datum, adres, ligging, gsm, telefoon, gegevens, visite.
+    Assenede, Evergem, Zelzate, Wachtebeke
   title: Contacteer architect Steven Baecke
 widgets:
   map: >-
