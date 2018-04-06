@@ -6,7 +6,7 @@ meta:
   description: >-
     Architect Steven Baecke doet nieuwbouw, verbouwingen, renovaties,
     regularisatie en stedenbouwkundige vergunningen. Actief in Assenede,
-    Evergem, Zelzate etc.
+    Evergem, Zelzate, Wachtebeke etc.
 
     Elk project is een unieke samenwerking tussen architect en bouwheer, dat
     leidt tot een goed resultaat. De uitwisseling van een visie of een idee is
