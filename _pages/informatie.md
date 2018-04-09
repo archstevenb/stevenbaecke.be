@@ -35,7 +35,7 @@ Tijdens het gesprek worden de bestaande toestand, de **stedenbouwkundige eisen**
 de **visie** en de **haalbaarheid** besproken.\
 De werken kunnen **vergunningsplichtig**, **meldingsplichtig** zijn of **vrijstelling** van beide.
 
-De klant besluit om de architect aan te stellen en **aanvaard** de **overeenkomst**.
+De klant besluit om de architect aan te stellen en **aanvaardt** de **overeenkomst**.
 
 De bestaande toestand wordt opgemeten of de bestaande plannen worden doorgegeven. 
 
