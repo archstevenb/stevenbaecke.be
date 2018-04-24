@@ -28,7 +28,7 @@ buttons:
   - title: Stel een vraag
     url: '/#contact'
 ---
-# Met een persoonlijke aanpak wordt de klant begeleidt in het bouwproces
+# Met een persoonlijke aanpak wordt de klant begeleid in het bouwproces
 
 Een eerste **vrijblijvende afspraak** is gratis en kan u altijd aanvragen. \
 Tijdens het gesprek worden de bestaande toestand, de **stedenbouwkundige eisen**,
