@@ -19,6 +19,7 @@ gem "jekyll", "~> 3.7.3"
 
 gem "base64"
 gem "bigdecimal"
+gem "webrick"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
