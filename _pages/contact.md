@@ -10,7 +10,7 @@ meta:
   title: Contacteer architect Steven Baecke
 widgets:
   map: >-
-    https://www.google.com/maps/embed/v1/place?q=STOEPESTRAAT+18+-+9960+ASSENEDE&key=AIzaSyBQhdzM-IjtnsSoFz_CfbBCqcBhd5nQN9c
+    https://www.google.com/maps/embed/v1/place?q=STOEPESTRAAT+18+-+9960+ASSENEDE
 ---
 # Contact
 
