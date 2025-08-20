@@ -28,7 +28,7 @@ group :jekyll_plugins do
   gem "autoprefixer-rails"
   gem "uglifier"
   gem "jekyll-remote-theme"
-  gem "jekyll-assets"
+  gem "jekyll-assets", git: "https://github.com/envygeeks/jekyll-assets"
   gem "mini_magick"
   gem "image_optim"
   gem "jekyll-email-protect"
